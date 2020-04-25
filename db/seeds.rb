@@ -17,6 +17,14 @@ work1 = Work.create(
     ].join("\n"),
 )
 work2 = Work.create(
+  name: "Strawberry Mint Chocolate",
+  caption: [
+      "Music CD",
+      "2015/10/25 (M3 2015秋)",
+      "Author: Yu^ta, yuinore, hato, mizninjin",
+    ].join("\n"),
+)
+work3 = Work.create(
   name: "城主の時代だ！",
   caption: "Music Video",
 )
@@ -30,9 +38,16 @@ Image.create([
   work: work1,
 ])
 Image.create([
+  name: "Strawberry Mint Chocolate" ,
+  index: 0,
+  path: "jackets/strawberry-mint-chocolate-jacket.png",
+  link: nil,
+  work: work2,
+])
+Image.create([
   name: "城主の時代だ！" ,
   index: 0,
   path: "movies/castle_age.jpg",
   link: "https://www.youtube.com/watch?v=vU8lj_drm9A",
-  work: work2,
+  work: work3,
 ])
