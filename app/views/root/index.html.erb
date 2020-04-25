@@ -10,8 +10,8 @@
 </div>
 <%- @works.each do |work| %>
   <div class="container">
-    <h3><%= work.name %></h3><br>
-    <%= simple_format(h(work.caption)) %><br>
+    <p><h3><%= work.name %></h3></p>
+    <%= simple_format(h(work.caption)) %>
     <%- work.images.each do |image| %>
       <%- if image.link %>
         <a href="<%= image.link %>">
