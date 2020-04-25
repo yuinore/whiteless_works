@@ -9,13 +9,14 @@ namespace :seeder do
     str << "Work.destroy_all"
     str << "Image.destroy_all"
 
+    stable_sort_i = 0
     obj.reject { |work| work[:name].blank? }.
-        sort_by { |work| p work[:published_at] }.
+        sort_by { |work| [work[:published_at], stable_sort_i += 1] }.
         reverse.
         each { |work|
       str << "work = Work.create("
       str << "         name: #{work[:name].inspect},"
-      str << "         caption: #{work[:caption].inspect},"
+      str << "         caption: #{(work[:category] + "\n" + work[:caption]).inspect},"
       str << "       )"
 
       work[:images].each_line.map(&:chomp).each_with_index { |image, i|
