@@ -6,8 +6,31 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Work.delete_all
-Work.create([
+work1 = Work.create(
   name: "チノちゃん つかまえた！",
-  caption: "よそのこハンターえちきゅねシリーズ 番外編 vol.2"
+  caption: [
+      "よそのこハンターえちきゅねシリーズ 番外編 vol.2",
+      "2019/11/3",
+      "Author: hato",
+      "Guest: ラクシュみぃ, からたに",
+    ].join("\n"),
+)
+work2 = Work.create(
+  name: "城主の時代だ！",
+  caption: "Music Video",
+)
+
+Image.create([
+  name: "チノちゃん つかまえた！" ,
+  index: 0,
+  path: "books/chino_dl_001.png",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=579768",
+  work: work1,
+])
+Image.create([
+  name: "城主の時代だ！" ,
+  index: 0,
+  path: "movies/castle_age.jpg",
+  link: "https://www.youtube.com/watch?v=vU8lj_drm9A",
+  work: work2,
 ])

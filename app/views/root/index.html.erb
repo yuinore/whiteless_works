@@ -1,22 +1,25 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
 <meta charset="UTF-8">
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 <%= javascript_include_tag "root.js" %>
-<title>whiteless.works</title>
-</head>
-<body>
+
 <div class="container">
   <h1>whiteless.works</h1>
 </div>
 <%- @works.each do |work| %>
   <div class="container">
     <h3><%= work.name %></h3><br>
-    <%= work.caption %><br>
+    <%= simple_format(h(work.caption)) %><br>
+    <%- work.images.each do |image| %>
+      <%- if image.link %>
+        <a href="<%= image.link %>">
+      <%- end %>
+      <img src="<%= image.path %>" width="400px" class="picture">
+      <%- if image.link %>
+        </a>
+      <%- end %>
+    <%- end %>
   </div>
 <%- end %>
-</html>
