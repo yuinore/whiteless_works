@@ -1,3 +1,50 @@
-// Place all the styles related to the root controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+@font-face {
+    font-family: 'Koruri';
+    src: url('https://cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.eot');
+    src: url('https://cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.eot?#iefix') format('embedded-opentype');
+    src: url('https://cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.woff') format('woff'),
+         url('https://cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.ttf') format('truetype');
+
+    /*  for fuck'n chrome  */
+    src: url(https://cdn.plusminus.io/font/webkoruri/20140628/WebKoruri.woff) format('woff');
+}
+
+body {
+    font-family: Koruri;
+    margin: 0;
+    padding: 0em;
+    color: #331200;
+    background-color: #5db69a;
+    text-align: center;
+}
+
+.container {
+    margin: 0;
+    padding: 3em;
+}
+
+h1 {
+    filter: drop-shadow(0.1em 0.1em 0.05em rgba(255, 255, 255, 0.3));
+}
+
+.picture {
+    box-shadow: 0.1em 0.1em 0.5em rgba(0, 0, 0, 0.3);
+    margin: 0.5em;
+
+    /* fadein */
+    opacity : 0;
+    transform: translateY(20px);
+    transition: all 1s;
+}
+
+div:nth-child(3n+1) {
+    background-color: #5db69a;
+}
+
+div:nth-child(3n+2) {
+    background-color: #ffbbc3;
+}
+
+div:nth-child(3n) {
+    background-color: #bf956c;
+}
