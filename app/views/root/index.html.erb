@@ -84,27 +84,10 @@ $(function(){
 <div class="container">
   <h1>whiteless.works</h1>
 </div>
-<div class="container">
-  <h3>チノちゃん つかまえた！</h3><br>
-  2019/**/** ()<br>
-  Author: hato<br>
-  Guest: <br>
-  Links: Melonbooks BOOTH<br>
-  <img src="books/chino_dl_001.png" width="400px" class="picture">
-</div>
-<div class="container">
-  <h3>Strawberry Mint Chocolate</h3><br>
-  2015/10/25 (M3 2015秋)<br>
-  Author: Yu^ta, yuinore, hato, mizninjin<br>
-  <img src="jackets/strawberry-mint-chocolate-jacket.png" width="400px" class="picture">
-</div>
-<div class="container">
-  <h3>城主の時代だ！</h3><br>
-  2019/9/16 (FRENZ 2018 day2)<br>
-  2018/12/22 (YouTube)<br>
-  Author: Yu^ta, yuinore, K. Mimura<br>
-  Guest: furea2<br>
-  <a href="https://www.youtube.com/watch?v=vU8lj_drm9A"><img src="movies/castle_age.jpg" width="400px" class="picture"></a>
-</div>
-</body>
+<%- @works.each do |work| %>
+  <div class="container">
+    <h3><%= work.name %></h3><br>
+    <%= work.caption %><br>
+  </div>
+<%- end %>
 </html>
