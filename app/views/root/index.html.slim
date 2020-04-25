@@ -1,0 +1,32 @@
+meta[charset="UTF-8"]
+script[src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"]
+= javascript_include_tag "root.js"
+.container
+  h1
+    | whiteless.works
+  p
+    | わいとれすわーくすは、楽しいを作るクリエイター集団です。
+- @works.each do |work|
+  .container
+    p
+    h3
+      = work.name
+    = simple_format(h(work.caption))
+    - work.images.each_with_index do |image, i|
+      p
+        - if image.link
+          |  <a href="
+          = image.link
+          | "> 
+          - - end
+          |  <img src="
+          = image.path
+          | " width="
+          = i == 0 ? "400px" : "300px"
+          | " class="picture"> 
+          - if image.link
+            - - end
+      - - end
+  - - end
+  .container
+    |  whiteless.works official website / produced by yuinore 
