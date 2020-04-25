@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Work.destroy_all
 work1 = Work.create(
   name: "チノちゃん つかまえた！",
   caption: [
@@ -20,6 +21,7 @@ work2 = Work.create(
   caption: "Music Video",
 )
 
+Image.destroy_all
 Image.create([
   name: "チノちゃん つかまえた！" ,
   index: 0,
