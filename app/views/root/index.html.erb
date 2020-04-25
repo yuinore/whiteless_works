@@ -13,13 +13,15 @@
     <p><h3><%= work.name %></h3></p>
     <%= simple_format(h(work.caption)) %>
     <%- work.images.each do |image| %>
-      <%- if image.link %>
-        <a href="<%= image.link %>">
-      <%- end %>
-      <img src="<%= image.path %>" width="400px" class="picture">
-      <%- if image.link %>
-        </a>
-      <%- end %>
+      <p>
+        <%- if image.link %>
+          <a href="<%= image.link %>">
+        <%- end %>
+        <img src="<%= image.path %>" width="400px" class="picture">
+        <%- if image.link %>
+          </a>
+        <%- end %>
+      </p>
     <%- end %>
   </div>
 <%- end %>
