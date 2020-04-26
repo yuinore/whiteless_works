@@ -1,29 +1,30 @@
 meta[charset="UTF-8"]
-meta content="summary_large_image" name="twitter:card" /
-meta content="@yuinore" name="twitter:site" /
-meta content="yuinore.moe" name="twitter:title" /
-meta content=("OMG MOST KAWAII GIRL EVER!!!!") name="twitter:description" /
-meta content="http://yuinore.moe/twitter-card.png" name="twitter:image" /
+meta[name="twitter:card" content="summary_large_image"]
+meta[name="twitter:site" content="@yuinore"]
+meta[name="twitter:title" content="whiteless.works"]
+meta[name="twitter:description" content="わいとれすわーくすは、楽しいを作るクリエイター集団です。"]
+meta[name="twitter:image" content="http://yuinore.moe/twitter-card.png"]
 
 script[src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"]
 = javascript_include_tag "root.js"
 
-.container
-  h1
-    | whiteless.works
-  p
-    | わいとれすわーくすは、楽しいを作るクリエイター集団です。
-
-- @works.each do |work|
+div
   .container
-    h3
-      = simple_format(h(work.name))
-    = simple_format(h(work.caption))
-    - work.images.each_with_index do |image, i|
-      p
-        - image_html = capture do
-          = image_tag "/#{image.path}", width: "#{(i == 0 ? 400 : 300)}px", class: "picture"
-        = link_to_if image.link.present?, image_html, image.link, target: "_blank"
+    h1
+      | whiteless.works
+    p
+      | わいとれすわーくすは、楽しいを作るクリエイター集団です。
 
-.container
-  |  whiteless.works official website / produced by yuinore
+  - @works.each do |work|
+    .container
+      h3
+        = simple_format(h(work.name))
+      = simple_format(h(work.caption))
+      - work.images.each_with_index do |image, i|
+        p
+          - image_html = capture do
+            = image_tag "/#{image.path}", width: "#{(i == 0 ? 400 : 300)}px", class: "picture"
+          = link_to_if image.link.present?, image_html, image.link, target: "_blank"
+
+  .container
+    |  whiteless.works official website / produced by yuinore

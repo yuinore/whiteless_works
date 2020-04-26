@@ -38,14 +38,14 @@ h1 {
     transition: all 1s;
 }
 
-div:nth-child(3n+1) {
+div.container:nth-child(3n+1) {
     background-color: #5db69a;
 }
 
-div:nth-child(3n+2) {
+div.container:nth-child(3n+2) {
     background-color: #ffbbc3;
 }
 
-div:nth-child(3n) {
+div.container:nth-child(3n) {
     background-color: #bf956c;
 }
