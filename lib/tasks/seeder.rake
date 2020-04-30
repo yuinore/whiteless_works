@@ -8,6 +8,7 @@ namespace :seeder do
 
     str << "Work.destroy_all"
     str << "Image.destroy_all"
+    str << "ExternalLink.destroy_all"
 
     stable_sort_i = 0
     obj.reject { |work| work[:name].blank? }.
@@ -28,6 +29,17 @@ namespace :seeder do
         str << "  work: work,"
         str << ")"
       }
+
+      work[:external_links].each_line.map(&:chomp).each_with_index { |link_info, i|
+        name, link = link_info.split(",")
+        str << "ExternalLink.create("
+        str << "  name: #{name.inspect},"
+        str << "  link: #{link.inspect},"
+        str << "  index: #{i},"
+        str << "  work: work,"
+        str << ")"
+      }
+
     }
 
     puts str.join("\n")

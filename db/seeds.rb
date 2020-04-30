@@ -1,5 +1,6 @@
 Work.destroy_all
 Image.destroy_all
+ExternalLink.destroy_all
 work = Work.create(
          name: "ねこみみえっちイラスト本 4",
          caption: "同人誌\n2020/5/5\nAuthor: hato\nGuest: シロ9じら, いなじ, るりあ, 風倉ふう, わたるん, 矢野原ききょう",
@@ -9,6 +10,18 @@ Image.create(
   index: 0,
   path: "images/books_010_neko4.png",
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=651820",
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/1965787",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=651820",
+  index: 1,
   work: work,
 )
 work = Work.create(
@@ -22,6 +35,18 @@ Image.create(
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=649901",
   work: work,
 )
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/1951802",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=649901",
+  index: 1,
+  work: work,
+)
 work = Work.create(
          name: "くらんちゃん つかまえた！",
          caption: "同人誌\n2019/12/30\nAuthor: hato\nGuest: ラクシュみぃ, ゆーね, こなもち",
@@ -33,6 +58,18 @@ Image.create(
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=608381",
   work: work,
 )
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/1779269",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=608381",
+  index: 1,
+  work: work,
+)
 work = Work.create(
          name: "チノちゃん つかまえた！",
          caption: "同人誌\n2019/11/3\nAuthor: hato\nGuest: ラクシュみぃ, からたに",
@@ -42,6 +79,18 @@ Image.create(
   index: 0,
   path: "images/books_007_chino.png",
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=579768",
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/1658466",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=579768",
+  index: 1,
   work: work,
 )
 work = Work.create(
@@ -66,6 +115,18 @@ Image.create(
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=525762",
   work: work,
 )
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/1515262",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=525762",
+  index: 1,
+  work: work,
+)
 work = Work.create(
          name: "ひかりちゃん つかまえた！",
          caption: "同人誌\n2019/6/16\nAuthor: hato\nGuest: 菊, こなもち",
@@ -75,6 +136,18 @@ Image.create(
   index: 0,
   path: "images/books_005_gleam.png",
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=518439",
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/1425005",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=518439",
+  index: 1,
   work: work,
 )
 work = Work.create(
@@ -88,6 +161,18 @@ Image.create(
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=505092",
   work: work,
 )
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/1344333",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=505092",
+  index: 1,
+  work: work,
+)
 work = Work.create(
          name: "柚音ちゃん つかまえた！",
          caption: "同人誌\n2019/3/10\nAuthor: hato\nGuest: ゆーね, ふれぁ",
@@ -97,6 +182,18 @@ Image.create(
   index: 0,
   path: "images/books_003_yune.png",
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=505093",
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/1344308",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=505093",
+  index: 1,
   work: work,
 )
 work = Work.create(
@@ -110,6 +207,12 @@ Image.create(
   link: "https://hatoqne.booth.pm/items/1172743",
   work: work,
 )
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/1172743",
+  index: 0,
+  work: work,
+)
 work = Work.create(
          name: "ねこみみえっちイラスト本 りみっくす！",
          caption: "同人誌\n2018/12/31\nAuthor: hato\nGuest: furea2",
@@ -119,6 +222,18 @@ Image.create(
   index: 0,
   path: "images/books_001_neko1.png",
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=505094",
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/1173619",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=505094",
+  index: 1,
   work: work,
 )
 work = Work.create(
@@ -160,6 +275,12 @@ Image.create(
   link: nil,
   work: work,
 )
+ExternalLink.create(
+  name: "Youtube",
+  link: "https://www.youtube.com/watch?v=vU8lj_drm9A",
+  index: 0,
+  work: work,
+)
 work = Work.create(
          name: "にゃーんEP",
          caption: "音楽CD\n2018/8/10\nコンピレーションアルバム",
@@ -169,6 +290,12 @@ Image.create(
   index: 0,
   path: "images/cd_003_nyan.jpg",
   link: "https://booth.pm/ja/items/1344645",
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://booth.pm/ja/items/1344645",
+  index: 0,
   work: work,
 )
 work = Work.create(
@@ -232,9 +359,15 @@ Image.create(
   link: "http://yuinore.net/2017/02/smc-package/",
   work: work,
 )
+ExternalLink.create(
+  name: "Download",
+  link: "http://yuinore.net/2017/02/smc-package/",
+  index: 0,
+  work: work,
+)
 work = Work.create(
          name: "いちご みんと ちょこれーと",
-         caption: "映像作品\n2017/2/14\nFRENZ 2014 出展作品\nAuthor: yuinore, Yu^ta, mizninjin\nGuest: バリキオス, ちゃば, 守鈴, Azel",
+         caption: "映像作品\n2017/2/14\nFRENZ 2014 出展作品\nAuthor: yuinore, こんにチワワ, Yu^ta, mizninjin\nGuest: バリキオス, ちゃば, 守鈴, Azel",
        )
 Image.create(
   name: "いちご みんと ちょこれーと_0",
@@ -271,6 +404,18 @@ Image.create(
   link: nil,
   work: work,
 )
+ExternalLink.create(
+  name: "Youtube",
+  link: "https://www.youtube.com/watch?v=SV_BxJzKcnY",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "ニコニコ動画",
+  link: "https://www.nicovideo.jp/watch/sm30609462",
+  index: 1,
+  work: work,
+)
 work = Work.create(
          name: "Planisphere",
          caption: "音楽CD\n2016/12/31 (C91 3日目)\nAuthor: Yu^ta, mizninjin, yuinore",
@@ -282,6 +427,12 @@ Image.create(
   link: "https://booth.pm/ja/items/1344630",
   work: work,
 )
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://booth.pm/ja/items/1344630",
+  index: 0,
+  work: work,
+)
 work = Work.create(
          name: "Sunny",
          caption: "映像作品\n2016/09/24\nAuthor: yuinore, Yu^ta",
@@ -291,6 +442,18 @@ Image.create(
   index: 0,
   path: "images/movie_004_sunny.jpg",
   link: "https://www.youtube.com/watch?v=tp-UAMO69qQ",
+  work: work,
+)
+ExternalLink.create(
+  name: "Youtube",
+  link: "https://www.youtube.com/watch?v=tp-UAMO69qQ",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "ニコニコ動画",
+  link: "https://www.nicovideo.jp/watch/sm29711394",
+  index: 1,
   work: work,
 )
 work = Work.create(
@@ -315,15 +478,33 @@ Image.create(
   link: "https://booth.pm/ja/items/1344613",
   work: work,
 )
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://booth.pm/ja/items/1344613",
+  index: 0,
+  work: work,
+)
 work = Work.create(
          name: "Busy Factory",
-         caption: "映像作品\n2015/10/03\nAuthor: yuinore, Yu^ta",
+         caption: "映像作品\n2015/10/03\nAuthor: yuinore, こんにチワワ, Yu^ta",
        )
 Image.create(
   name: "Busy Factory_0",
   index: 0,
   path: "images/movie_003_busyfactory.jpg",
   link: "https://www.youtube.com/watch?v=p2dy2LkOAzs",
+  work: work,
+)
+ExternalLink.create(
+  name: "Youtube",
+  link: "https://www.youtube.com/watch?v=p2dy2LkOAzs",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "ニコニコ動画",
+  link: "https://www.nicovideo.jp/watch/sm27292412",
+  index: 1,
   work: work,
 )
 work = Work.create(
@@ -339,13 +520,19 @@ Image.create(
 )
 work = Work.create(
          name: "第λ回 自称超有名BMS作家が物申す！",
-         caption: "BMSパッケージ\n2014/9/??",
+         caption: "BMSパッケージ\n2014/9/8",
        )
 Image.create(
   name: "第λ回 自称超有名BMS作家が物申す！_0",
   index: 0,
   path: "images/bmspack_001_famousbms.png",
   link: "http://famousbms.web.fc2.com/",
+  work: work,
+)
+ExternalLink.create(
+  name: "Download",
+  link: "http://famousbms.web.fc2.com/",
+  index: 0,
   work: work,
 )
 work = Work.create(
@@ -357,5 +544,17 @@ Image.create(
   index: 0,
   path: "images/movie_001_cutup.png",
   link: "https://www.youtube.com/watch?v=zsQD9_drLbY",
+  work: work,
+)
+ExternalLink.create(
+  name: "Youtube",
+  link: "https://www.youtube.com/watch?v=zsQD9_drLbY",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "ニコニコ動画",
+  link: "https://www.nicovideo.jp/watch/sm24421306",
+  index: 1,
   work: work,
 )
