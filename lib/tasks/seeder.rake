@@ -1,5 +1,11 @@
 namespace :seeder do
   desc "db/seed.rb を更新します"
+  task :seed do
+    Rake::Task["seeder:run"].invoke
+    Rake::Task["db:seed"].invoke
+  end
+
+  desc "db/seed.rb を更新します"
   task :run do
     url = "https://script.google.com/macros/s/AKfycbxi2V2ZeVwl2Icq13W2lu_yifd0MTKdSJX0VamK4qvECkdI8Tc/exec"
     json = `curl -L -s "#{url}"`
