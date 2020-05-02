@@ -69,17 +69,19 @@ namespace :seeder do
       next unless file_name.end_with?(".png", ".jpg")
       puts "next file: #{file_name}"
 
-      image = Magick::ImageList.new(file_name)
+      [[400, ""], [800, "@2x"]].each do |image_size, retina_postfix|
+        image = Magick::ImageList.new(file_name)
 
-      # 400x400 のボックス内に収める
-      # resize_to_limit は使えなかった
-      if image.columns > 400 || image.rows > 400
-        image.resize_to_fit!(400, 400)
-      end
+        # 400x400 のボックス内に収める
+        # resize_to_limit は使えなかった
+        if image.columns > image_size || image.rows > image_size
+          image.resize_to_fit!(*([image_size] * 2))
+        end
 
-      image.format = 'JPEG'
-      image.write('public/images/thumbs/' + File.basename(file_name, ".*") + ".jpg") do
-        self.quality = 90
+        image.format = 'JPEG'
+        image.write("public/images/thumbs/#{File.basename(file_name, ".*")}#{retina_postfix}.jpg") do
+          self.quality = 90
+        end
       end
     end
   end
