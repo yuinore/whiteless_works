@@ -29,12 +29,18 @@ namespace :seeder do
       str << "         caption: #{(work[:category] + "\n" + work[:caption]).inspect},"
       str << "       )"
 
-      work[:images].each_line.map(&:chomp).each_with_index { |image, i|
+      work[:images].each_line.map(&:chomp).each_with_index { |image_filename, i|
+        thumbnail_path = "images/thumbs/" + File.basename(image_filename, ".*") + ".jpg"
+
+        image_list = Magick::ImageList.new("public/" + thumbnail_path)
+
         str << "Image.create("
         str << "  name: #{(work[:name] + "_#{i}").inspect},"
         str << "  index: #{i},"
-        str << "  path: #{("images/" + image).inspect},"
-        str << "  thumb_path: #{("images/thumbs/" + File.basename(image, ".*") + ".jpg").inspect},"
+        str << "  path: #{("images/" + image_filename).inspect},"
+        str << "  thumb_path: #{thumbnail_path.inspect},"
+        str << "  thumb_width: #{image_list.columns},"
+        str << "  thumb_height: #{image_list.rows},"
         # str << "  link: #{i == 0 && work[:link].present? ? work[:link].inspect : "nil"},"
         str << "  link: nil,"
         str << "  work: work,"

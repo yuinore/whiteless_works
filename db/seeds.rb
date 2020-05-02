@@ -10,6 +10,8 @@ Image.create(
   index: 0,
   path: "images/books_010_neko4.png",
   thumb_path: "images/thumbs/books_010_neko4.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -34,6 +36,8 @@ Image.create(
   index: 0,
   path: "images/books_009_trio.png",
   thumb_path: "images/thumbs/books_009_trio.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -58,6 +62,8 @@ Image.create(
   index: 0,
   path: "images/website_whiteless.png",
   thumb_path: "images/thumbs/website_whiteless.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -76,6 +82,8 @@ Image.create(
   index: 0,
   path: "images/books_008_clan.png",
   thumb_path: "images/thumbs/books_008_clan.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -100,6 +108,8 @@ Image.create(
   index: 0,
   path: "images/books_007_chino.png",
   thumb_path: "images/thumbs/books_007_chino.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -124,6 +134,8 @@ Image.create(
   index: 0,
   path: "images/movie_007_sweets.png",
   thumb_path: "images/thumbs/movie_007_sweets.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -136,6 +148,8 @@ Image.create(
   index: 0,
   path: "images/books_006_neko3.png",
   thumb_path: "images/thumbs/books_006_neko3.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -166,6 +180,8 @@ Image.create(
   index: 0,
   path: "images/books_005_gleam.png",
   thumb_path: "images/thumbs/books_005_gleam.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -196,6 +212,8 @@ Image.create(
   index: 0,
   path: "images/books_004_flora.png",
   thumb_path: "images/thumbs/books_004_flora.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -226,6 +244,8 @@ Image.create(
   index: 0,
   path: "images/books_003_yune.png",
   thumb_path: "images/thumbs/books_003_yune.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -256,6 +276,8 @@ Image.create(
   index: 0,
   path: "images/books_002_neko2.png",
   thumb_path: "images/thumbs/books_002_neko2.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -280,6 +302,8 @@ Image.create(
   index: 0,
   path: "images/books_001_neko1.png",
   thumb_path: "images/thumbs/books_001_neko1.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -310,6 +334,8 @@ Image.create(
   index: 0,
   path: "images/movie_006_castleage_00.jpg",
   thumb_path: "images/thumbs/movie_006_castleage_00.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -318,6 +344,8 @@ Image.create(
   index: 1,
   path: "images/movie_006_castleage_01.jpg",
   thumb_path: "images/thumbs/movie_006_castleage_01.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -326,6 +354,8 @@ Image.create(
   index: 2,
   path: "images/movie_006_castleage_02.jpg",
   thumb_path: "images/thumbs/movie_006_castleage_02.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -334,6 +364,8 @@ Image.create(
   index: 3,
   path: "images/movie_006_castleage_03.jpg",
   thumb_path: "images/thumbs/movie_006_castleage_03.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -342,6 +374,8 @@ Image.create(
   index: 4,
   path: "images/movie_006_castleage_04.jpg",
   thumb_path: "images/thumbs/movie_006_castleage_04.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -360,6 +394,8 @@ Image.create(
   index: 0,
   path: "images/cd_003_nyan.jpg",
   thumb_path: "images/thumbs/cd_003_nyan.jpg",
+  thumb_width: 400,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -378,6 +414,8 @@ Image.create(
   index: 0,
   path: "images/website_mid2bms_wiki.png",
   thumb_path: "images/thumbs/website_mid2bms_wiki.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -396,6 +434,8 @@ Image.create(
   index: 0,
   path: "images/movie_005_flyup_00.jpg",
   thumb_path: "images/thumbs/movie_005_flyup_00.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -404,6 +444,8 @@ Image.create(
   index: 1,
   path: "images/movie_005_flyup_01.jpg",
   thumb_path: "images/thumbs/movie_005_flyup_01.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -412,6 +454,8 @@ Image.create(
   index: 2,
   path: "images/movie_005_flyup_02.jpg",
   thumb_path: "images/thumbs/movie_005_flyup_02.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -420,6 +464,8 @@ Image.create(
   index: 3,
   path: "images/movie_005_flyup_03.jpg",
   thumb_path: "images/thumbs/movie_005_flyup_03.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -428,6 +474,8 @@ Image.create(
   index: 4,
   path: "images/movie_005_flyup_04.jpg",
   thumb_path: "images/thumbs/movie_005_flyup_04.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -440,6 +488,8 @@ Image.create(
   index: 0,
   path: "images/bms_mana.jpg",
   thumb_path: "images/thumbs/bms_mana.jpg",
+  thumb_width: 400,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -452,6 +502,8 @@ Image.create(
   index: 0,
   path: "images/website_yuinore_moe.png",
   thumb_path: "images/thumbs/website_yuinore_moe.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -470,6 +522,8 @@ Image.create(
   index: 0,
   path: "images/website_sktdn.png",
   thumb_path: "images/thumbs/website_sktdn.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -488,6 +542,8 @@ Image.create(
   index: 0,
   path: "images/bmspack_002_smc.png",
   thumb_path: "images/thumbs/bmspack_002_smc.jpg",
+  thumb_width: 400,
+  thumb_height: 300,
   link: nil,
   work: work,
 )
@@ -506,6 +562,8 @@ Image.create(
   index: 0,
   path: "images/movie_002_smc_00.jpg",
   thumb_path: "images/thumbs/movie_002_smc_00.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -514,6 +572,8 @@ Image.create(
   index: 1,
   path: "images/movie_002_smc_01.jpg",
   thumb_path: "images/thumbs/movie_002_smc_01.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -522,6 +582,8 @@ Image.create(
   index: 2,
   path: "images/movie_002_smc_02.jpg",
   thumb_path: "images/thumbs/movie_002_smc_02.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -530,6 +592,8 @@ Image.create(
   index: 3,
   path: "images/movie_002_smc_03.jpg",
   thumb_path: "images/thumbs/movie_002_smc_03.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -538,6 +602,8 @@ Image.create(
   index: 4,
   path: "images/movie_002_smc_04.jpg",
   thumb_path: "images/thumbs/movie_002_smc_04.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -562,6 +628,8 @@ Image.create(
   index: 0,
   path: "images/cd_002_planisphere.jpg",
   thumb_path: "images/thumbs/cd_002_planisphere.jpg",
+  thumb_width: 400,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -580,6 +648,8 @@ Image.create(
   index: 0,
   path: "images/movie_004_sunny.jpg",
   thumb_path: "images/thumbs/movie_004_sunny.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -610,6 +680,8 @@ Image.create(
   index: 0,
   path: "images/bms_chainsaw.jpg",
   thumb_path: "images/thumbs/bms_chainsaw.jpg",
+  thumb_width: 256,
+  thumb_height: 256,
   link: nil,
   work: work,
 )
@@ -622,6 +694,8 @@ Image.create(
   index: 0,
   path: "images/cd_001_smc.jpg",
   thumb_path: "images/thumbs/cd_001_smc.jpg",
+  thumb_width: 400,
+  thumb_height: 400,
   link: nil,
   work: work,
 )
@@ -640,6 +714,8 @@ Image.create(
   index: 0,
   path: "images/movie_003_busyfactory.jpg",
   thumb_path: "images/thumbs/movie_003_busyfactory.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -664,6 +740,8 @@ Image.create(
   index: 0,
   path: "images/website_yuinore_net.png",
   thumb_path: "images/thumbs/website_yuinore_net.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -682,6 +760,8 @@ Image.create(
   index: 0,
   path: "images/bms_rainy.png",
   thumb_path: "images/thumbs/bms_rainy.jpg",
+  thumb_width: 256,
+  thumb_height: 256,
   link: nil,
   work: work,
 )
@@ -694,6 +774,8 @@ Image.create(
   index: 0,
   path: "images/bmspack_001_famousbms_00.png",
   thumb_path: "images/thumbs/bmspack_001_famousbms_00.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -702,6 +784,8 @@ Image.create(
   index: 1,
   path: "images/bmspack_001_famousbms_01.png",
   thumb_path: "images/thumbs/bmspack_001_famousbms_01.jpg",
+  thumb_width: 400,
+  thumb_height: 300,
   link: nil,
   work: work,
 )
@@ -720,6 +804,8 @@ Image.create(
   index: 0,
   path: "images/movie_001_cutup.png",
   thumb_path: "images/thumbs/movie_001_cutup.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )
@@ -744,6 +830,8 @@ Image.create(
   index: 0,
   path: "images/software_mid2bms.png",
   thumb_path: "images/thumbs/software_mid2bms.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
   link: nil,
   work: work,
 )

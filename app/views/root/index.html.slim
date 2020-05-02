@@ -19,7 +19,8 @@ div
         p.image-gallery
           - image_html = capture do
             = image_tag "/#{image.thumb_path}", \
-                        width: "#{(i == 0 ? 400 : 300)}px", \
+                        width: "#{image.thumb_width}px", \
+                        height: "#{image.thumb_height}px", \
                         class: "picture", \
                         srcset: "/images/thumbs/#{File.basename(image.thumb_path, ".*")}@2x.jpg 2x"
           /= link_to_if image.link.present?, image_html, image.link, target: "_blank"
