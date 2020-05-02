@@ -45,3 +45,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'slim-rails'
 gem 'html2slim'
+
+# if you are using CentOS, you may need to execute commands like this???????:
+#   $ sudo dnf config-manager --set-enabled PowerTools
+#   $ sudo yum -y install ImageMagick ImageMagick-devel
+gem 'carrierwave'
+gem 'rmagick'
