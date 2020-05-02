@@ -37,6 +37,7 @@ h1 {
     transform: translateY(20px);
     transition: all 1s;
     border-radius: 8px;
+    max-width:100%;
 }
 
 div.container:nth-child(3n+1) {

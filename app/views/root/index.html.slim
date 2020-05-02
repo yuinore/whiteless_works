@@ -16,15 +16,18 @@ div
         = link_to external_link.name, external_link.link
         br
       - work.images.each_with_index do |image, i|
-        p.image-gallery
+        span.image-gallery
           - image_html = capture do
             = image_tag "/#{image.thumb_path}", \
                         width: "#{image.thumb_width}px", \
-                        height: "#{image.thumb_height}px", \
+                        # height: "#{image.thumb_height}px", \
+                        height: "auto", \
                         class: "picture", \
                         srcset: "/images/thumbs/#{File.basename(image.thumb_path, ".*")}@2x.jpg 2x"
           /= link_to_if image.link.present?, image_html, image.link, target: "_blank"
           = link_to_if true, image_html, "/#{image.path}"
+        - if i.zero?
+          br
 
   .container
     |  whiteless.works official website / produced by yuinore

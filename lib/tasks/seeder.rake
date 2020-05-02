@@ -3,7 +3,6 @@ require 'rmagick'
 namespace :seeder do
   desc "db/seed.rb を更新します"
   task :seed do
-    Rake::Task["seeder:generate_thumbs"].invoke
     Rake::Task["seeder:run"].invoke
     Rake::Task["db:seed"].invoke
   end
@@ -30,17 +29,18 @@ namespace :seeder do
       str << "       )"
 
       work[:images].each_line.map(&:chomp).each_with_index { |image_filename, i|
-        thumbnail_path = "images/thumbs/" + File.basename(image_filename, ".*") + ".jpg"
-
-        image_list = Magick::ImageList.new("public/" + thumbnail_path)
+        thumb_path,
+        thumb_width,
+        thumb_height = generate_thumbnail("images/" + image_filename,
+                                          i == 0 ? 400 : 160)
 
         str << "Image.create("
         str << "  name: #{(work[:name] + "_#{i}").inspect},"
         str << "  index: #{i},"
         str << "  path: #{("images/" + image_filename).inspect},"
-        str << "  thumb_path: #{thumbnail_path.inspect},"
-        str << "  thumb_width: #{image_list.columns},"
-        str << "  thumb_height: #{image_list.rows},"
+        str << "  thumb_path: #{thumb_path.inspect},"
+        str << "  thumb_width: #{thumb_width},"
+        str << "  thumb_height: #{thumb_height},"
         # str << "  link: #{i == 0 && work[:link].present? ? work[:link].inspect : "nil"},"
         str << "  link: nil,"
         str << "  work: work,"
@@ -63,32 +63,36 @@ namespace :seeder do
     File.write("db/seeds.rb", str.join("\n"))
   end
 
-  desc "サムネイル画像を生成します"
-  task :generate_thumbs do
-    # 画像一覧を取得
-    file_names = Dir.glob('public/images/*')
-
+  def initialize_thumbnails
     `mkdir -p public/images/thumbs`
+    `rm -f public/images/thumbs/*.jpg`
+  end
 
-    # サムネイル生成
-    file_names.each do |file_name|
-      next unless file_name.end_with?(".png", ".jpg")
-      puts "next file: #{file_name}"
+  def generate_thumbnail(filename, base_image_size)
+    puts "resize image: #{filename}"
+    ret = nil
 
-      [[400, ""], [800, "@2x"]].each do |image_size, retina_postfix|
-        image = Magick::ImageList.new(file_name)
+    [[base_image_size, ""], [base_image_size * 2, "@2x"]].each do |image_size, retina_postfix|
+      # refresh image
+      image = Magick::ImageList.new("public/" + filename)
+      thumb_path = "images/thumbs/#{File.basename(filename, ".*")}#{retina_postfix}.jpg"
 
-        # 400x400 のボックス内に収める
-        # resize_to_limit は使えなかった
-        if image.columns > image_size || image.rows > image_size
-          image.resize_to_fit!(*([image_size] * 2))
-        end
+      # 400x400 のボックス内に収める
+      if image.columns > image_size || image.rows > image_size
+        image.resize_to_fit!(*([image_size] * 2))
+      end
 
-        image.format = 'JPEG'
-        image.write("public/images/thumbs/#{File.basename(file_name, ".*")}#{retina_postfix}.jpg") do
-          self.quality = 90
-        end
+      image.format = 'JPEG'
+      image.write("public/" + thumb_path) do
+        self.quality = 90
+      end
+
+      if retina_postfix == ""
+        # path, width and height after resizing
+        ret = [thumb_path, image.columns, image.rows]
       end
     end
+
+    ret
   end
 end
