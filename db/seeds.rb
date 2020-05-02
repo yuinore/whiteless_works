@@ -9,7 +9,8 @@ Image.create(
   name: "ねこみみえっちイラスト本 4_0",
   index: 0,
   path: "images/books_010_neko4.png",
-  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=651820",
+  thumb_path: "images/thumbs/books_010_neko4.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -32,7 +33,8 @@ Image.create(
   name: "チマメ隊 つかまえた！_0",
   index: 0,
   path: "images/books_009_trio.png",
-  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=649901",
+  thumb_path: "images/thumbs/books_009_trio.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -55,7 +57,8 @@ Image.create(
   name: "whiteless.works_0",
   index: 0,
   path: "images/website_whiteless.png",
-  link: "https://whiteless.works/",
+  thumb_path: "images/thumbs/website_whiteless.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -72,7 +75,8 @@ Image.create(
   name: "くらんちゃん つかまえた！_0",
   index: 0,
   path: "images/books_008_clan.png",
-  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=608381",
+  thumb_path: "images/thumbs/books_008_clan.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -95,7 +99,8 @@ Image.create(
   name: "チノちゃん つかまえた！_0",
   index: 0,
   path: "images/books_007_chino.png",
-  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=579768",
+  thumb_path: "images/thumbs/books_007_chino.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -118,6 +123,7 @@ Image.create(
   name: "あまいこと_0",
   index: 0,
   path: "images/movie_007_sweets.png",
+  thumb_path: "images/thumbs/movie_007_sweets.jpg",
   link: nil,
   work: work,
 )
@@ -129,7 +135,8 @@ Image.create(
   name: "ねこみみえっちイラスト本 3_0",
   index: 0,
   path: "images/books_006_neko3.png",
-  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=525762",
+  thumb_path: "images/thumbs/books_006_neko3.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -144,6 +151,12 @@ ExternalLink.create(
   index: 1,
   work: work,
 )
+ExternalLink.create(
+  name: "DLsite",
+  link: "https://www.dlsite.com/maniax/work/=/product_id/RJ261585.html",
+  index: 2,
+  work: work,
+)
 work = Work.create(
          name: "ひかりちゃん つかまえた！",
          caption: "同人誌\n2019/6/16\nAuthor: hato\nGuest: 菊, こなもち\n制作時間: 105時間30分",
@@ -152,7 +165,8 @@ Image.create(
   name: "ひかりちゃん つかまえた！_0",
   index: 0,
   path: "images/books_005_gleam.png",
-  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=518439",
+  thumb_path: "images/thumbs/books_005_gleam.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -167,6 +181,12 @@ ExternalLink.create(
   index: 1,
   work: work,
 )
+ExternalLink.create(
+  name: "DLsite",
+  link: "https://www.dlsite.com/maniax/work/=/product_id/RJ256189.html",
+  index: 2,
+  work: work,
+)
 work = Work.create(
          name: "花名ちゃん つかまえた！",
          caption: "同人誌\n2019/4/29\nAuthor: hato",
@@ -175,7 +195,8 @@ Image.create(
   name: "花名ちゃん つかまえた！_0",
   index: 0,
   path: "images/books_004_flora.png",
-  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=505092",
+  thumb_path: "images/thumbs/books_004_flora.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -190,6 +211,12 @@ ExternalLink.create(
   index: 1,
   work: work,
 )
+ExternalLink.create(
+  name: "DLsite",
+  link: "https://www.dlsite.com/maniax/work/=/product_id/RJ252018.html",
+  index: 2,
+  work: work,
+)
 work = Work.create(
          name: "柚音ちゃん つかまえた！",
          caption: "同人誌\n2019/3/10\nAuthor: hato\nGuest: ゆーね, ふれぁ",
@@ -198,7 +225,8 @@ Image.create(
   name: "柚音ちゃん つかまえた！_0",
   index: 0,
   path: "images/books_003_yune.png",
-  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=505093",
+  thumb_path: "images/thumbs/books_003_yune.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -213,6 +241,12 @@ ExternalLink.create(
   index: 1,
   work: work,
 )
+ExternalLink.create(
+  name: "DLsite",
+  link: "https://www.dlsite.com/maniax/work/=/product_id/RJ252017.html",
+  index: 2,
+  work: work,
+)
 work = Work.create(
          name: "ねこみみえっちイラスト本 2",
          caption: "同人誌\n2018/12/31\nAuthor: hato",
@@ -221,13 +255,20 @@ Image.create(
   name: "ねこみみえっちイラスト本 2_0",
   index: 0,
   path: "images/books_002_neko2.png",
-  link: "https://hatoqne.booth.pm/items/1172743",
+  thumb_path: "images/thumbs/books_002_neko2.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
   name: "BOOTH",
   link: "https://hatoqne.booth.pm/items/1172743",
   index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "DLsite",
+  link: "https://www.dlsite.com/maniax/work/=/product_id/RJ243742.html",
+  index: 1,
   work: work,
 )
 work = Work.create(
@@ -238,7 +279,8 @@ Image.create(
   name: "ねこみみえっちイラスト本 りみっくす！_0",
   index: 0,
   path: "images/books_001_neko1.png",
-  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=505094",
+  thumb_path: "images/thumbs/books_001_neko1.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -253,6 +295,12 @@ ExternalLink.create(
   index: 1,
   work: work,
 )
+ExternalLink.create(
+  name: "DLsite",
+  link: "https://www.dlsite.com/maniax/work/=/product_id/RJ243741.html",
+  index: 2,
+  work: work,
+)
 work = Work.create(
          name: "城主の時代だ！",
          caption: "映像作品\n2018/12/22\nAuthor: yuinore, Yu^ta, furea2",
@@ -261,13 +309,15 @@ Image.create(
   name: "城主の時代だ！_0",
   index: 0,
   path: "images/movie_006_castleage_00.jpg",
-  link: "https://www.youtube.com/watch?v=vU8lj_drm9A",
+  thumb_path: "images/thumbs/movie_006_castleage_00.jpg",
+  link: nil,
   work: work,
 )
 Image.create(
   name: "城主の時代だ！_1",
   index: 1,
   path: "images/movie_006_castleage_01.jpg",
+  thumb_path: "images/thumbs/movie_006_castleage_01.jpg",
   link: nil,
   work: work,
 )
@@ -275,6 +325,7 @@ Image.create(
   name: "城主の時代だ！_2",
   index: 2,
   path: "images/movie_006_castleage_02.jpg",
+  thumb_path: "images/thumbs/movie_006_castleage_02.jpg",
   link: nil,
   work: work,
 )
@@ -282,6 +333,7 @@ Image.create(
   name: "城主の時代だ！_3",
   index: 3,
   path: "images/movie_006_castleage_03.jpg",
+  thumb_path: "images/thumbs/movie_006_castleage_03.jpg",
   link: nil,
   work: work,
 )
@@ -289,6 +341,7 @@ Image.create(
   name: "城主の時代だ！_4",
   index: 4,
   path: "images/movie_006_castleage_04.jpg",
+  thumb_path: "images/thumbs/movie_006_castleage_04.jpg",
   link: nil,
   work: work,
 )
@@ -306,7 +359,8 @@ Image.create(
   name: "にゃーんEP_0",
   index: 0,
   path: "images/cd_003_nyan.jpg",
-  link: "https://booth.pm/ja/items/1344645",
+  thumb_path: "images/thumbs/cd_003_nyan.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -323,6 +377,7 @@ Image.create(
   name: "Mid2BMS Wiki_0",
   index: 0,
   path: "images/website_mid2bms_wiki.png",
+  thumb_path: "images/thumbs/website_mid2bms_wiki.jpg",
   link: nil,
   work: work,
 )
@@ -340,6 +395,7 @@ Image.create(
   name: "わたしのて_0",
   index: 0,
   path: "images/movie_005_flyup_00.jpg",
+  thumb_path: "images/thumbs/movie_005_flyup_00.jpg",
   link: nil,
   work: work,
 )
@@ -347,6 +403,7 @@ Image.create(
   name: "わたしのて_1",
   index: 1,
   path: "images/movie_005_flyup_01.jpg",
+  thumb_path: "images/thumbs/movie_005_flyup_01.jpg",
   link: nil,
   work: work,
 )
@@ -354,6 +411,7 @@ Image.create(
   name: "わたしのて_2",
   index: 2,
   path: "images/movie_005_flyup_02.jpg",
+  thumb_path: "images/thumbs/movie_005_flyup_02.jpg",
   link: nil,
   work: work,
 )
@@ -361,6 +419,7 @@ Image.create(
   name: "わたしのて_3",
   index: 3,
   path: "images/movie_005_flyup_03.jpg",
+  thumb_path: "images/thumbs/movie_005_flyup_03.jpg",
   link: nil,
   work: work,
 )
@@ -368,6 +427,7 @@ Image.create(
   name: "わたしのて_4",
   index: 4,
   path: "images/movie_005_flyup_04.jpg",
+  thumb_path: "images/thumbs/movie_005_flyup_04.jpg",
   link: nil,
   work: work,
 )
@@ -379,6 +439,7 @@ Image.create(
   name: "Mana_0",
   index: 0,
   path: "images/bms_mana.jpg",
+  thumb_path: "images/thumbs/bms_mana.jpg",
   link: nil,
   work: work,
 )
@@ -390,7 +451,8 @@ Image.create(
   name: "yuinore.moe_0",
   index: 0,
   path: "images/website_yuinore_moe.png",
-  link: "http://yuinore.moe/",
+  thumb_path: "images/thumbs/website_yuinore_moe.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -407,6 +469,7 @@ Image.create(
   name: "鮭トドン_0",
   index: 0,
   path: "images/website_sktdn.png",
+  thumb_path: "images/thumbs/website_sktdn.jpg",
   link: nil,
   work: work,
 )
@@ -424,7 +487,8 @@ Image.create(
   name: "Strawberry Mint Chocolate BMS Package_0",
   index: 0,
   path: "images/bmspack_002_smc.png",
-  link: "http://yuinore.net/2017/02/smc-package/",
+  thumb_path: "images/thumbs/bmspack_002_smc.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -441,13 +505,15 @@ Image.create(
   name: "いちご みんと ちょこれーと_0",
   index: 0,
   path: "images/movie_002_smc_00.jpg",
-  link: "https://www.youtube.com/watch?v=SV_BxJzKcnY",
+  thumb_path: "images/thumbs/movie_002_smc_00.jpg",
+  link: nil,
   work: work,
 )
 Image.create(
   name: "いちご みんと ちょこれーと_1",
   index: 1,
   path: "images/movie_002_smc_01.jpg",
+  thumb_path: "images/thumbs/movie_002_smc_01.jpg",
   link: nil,
   work: work,
 )
@@ -455,6 +521,7 @@ Image.create(
   name: "いちご みんと ちょこれーと_2",
   index: 2,
   path: "images/movie_002_smc_02.jpg",
+  thumb_path: "images/thumbs/movie_002_smc_02.jpg",
   link: nil,
   work: work,
 )
@@ -462,6 +529,7 @@ Image.create(
   name: "いちご みんと ちょこれーと_3",
   index: 3,
   path: "images/movie_002_smc_03.jpg",
+  thumb_path: "images/thumbs/movie_002_smc_03.jpg",
   link: nil,
   work: work,
 )
@@ -469,6 +537,7 @@ Image.create(
   name: "いちご みんと ちょこれーと_4",
   index: 4,
   path: "images/movie_002_smc_04.jpg",
+  thumb_path: "images/thumbs/movie_002_smc_04.jpg",
   link: nil,
   work: work,
 )
@@ -492,7 +561,8 @@ Image.create(
   name: "Planisphere_0",
   index: 0,
   path: "images/cd_002_planisphere.jpg",
-  link: "https://booth.pm/ja/items/1344630",
+  thumb_path: "images/thumbs/cd_002_planisphere.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -509,7 +579,8 @@ Image.create(
   name: "Sunny_0",
   index: 0,
   path: "images/movie_004_sunny.jpg",
-  link: "https://www.youtube.com/watch?v=tp-UAMO69qQ",
+  thumb_path: "images/thumbs/movie_004_sunny.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -524,6 +595,12 @@ ExternalLink.create(
   index: 1,
   work: work,
 )
+ExternalLink.create(
+  name: "Vimeo",
+  link: "https://vimeo.com/183492226",
+  index: 2,
+  work: work,
+)
 work = Work.create(
          name: "CHAiNSAW",
          caption: "BMS\n2016/2/21\nAuthor: Yu^ta, yuinore",
@@ -532,6 +609,7 @@ Image.create(
   name: "CHAiNSAW_0",
   index: 0,
   path: "images/bms_chainsaw.jpg",
+  thumb_path: "images/thumbs/bms_chainsaw.jpg",
   link: nil,
   work: work,
 )
@@ -543,7 +621,8 @@ Image.create(
   name: "Strawberry Mint Chocolate_0",
   index: 0,
   path: "images/cd_001_smc.jpg",
-  link: "https://booth.pm/ja/items/1344613",
+  thumb_path: "images/thumbs/cd_001_smc.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -560,7 +639,8 @@ Image.create(
   name: "Busy Factory_0",
   index: 0,
   path: "images/movie_003_busyfactory.jpg",
-  link: "https://www.youtube.com/watch?v=p2dy2LkOAzs",
+  thumb_path: "images/thumbs/movie_003_busyfactory.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -583,7 +663,8 @@ Image.create(
   name: "yuinore.net_0",
   index: 0,
   path: "images/website_yuinore_net.png",
-  link: "http://yuinore.net/",
+  thumb_path: "images/thumbs/website_yuinore_net.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -600,6 +681,7 @@ Image.create(
   name: "Rainy_0",
   index: 0,
   path: "images/bms_rainy.png",
+  thumb_path: "images/thumbs/bms_rainy.jpg",
   link: nil,
   work: work,
 )
@@ -611,13 +693,15 @@ Image.create(
   name: "第λ回 自称超有名BMS作家が物申す！_0",
   index: 0,
   path: "images/bmspack_001_famousbms_00.png",
-  link: "http://famousbms.web.fc2.com/",
+  thumb_path: "images/thumbs/bmspack_001_famousbms_00.jpg",
+  link: nil,
   work: work,
 )
 Image.create(
   name: "第λ回 自称超有名BMS作家が物申す！_1",
   index: 1,
   path: "images/bmspack_001_famousbms_01.png",
+  thumb_path: "images/thumbs/bmspack_001_famousbms_01.jpg",
   link: nil,
   work: work,
 )
@@ -635,7 +719,8 @@ Image.create(
   name: "現実をカットアップしてみた_0",
   index: 0,
   path: "images/movie_001_cutup.png",
-  link: "https://www.youtube.com/watch?v=zsQD9_drLbY",
+  thumb_path: "images/thumbs/movie_001_cutup.jpg",
+  link: nil,
   work: work,
 )
 ExternalLink.create(
@@ -658,6 +743,7 @@ Image.create(
   name: "Mid2BMS_0",
   index: 0,
   path: "images/software_mid2bms.png",
+  thumb_path: "images/thumbs/software_mid2bms.jpg",
   link: nil,
   work: work,
 )

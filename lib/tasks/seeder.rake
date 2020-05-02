@@ -1,6 +1,9 @@
+require 'rmagick'
+
 namespace :seeder do
   desc "db/seed.rb を更新します"
   task :seed do
+    Rake::Task["seeder:generate_thumbs"].invoke
     Rake::Task["seeder:run"].invoke
     Rake::Task["db:seed"].invoke
   end
@@ -31,7 +34,9 @@ namespace :seeder do
         str << "  name: #{(work[:name] + "_#{i}").inspect},"
         str << "  index: #{i},"
         str << "  path: #{("images/" + image).inspect},"
-        str << "  link: #{i == 0 && work[:link].present? ? work[:link].inspect : "nil"},"
+        str << "  thumb_path: #{("images/thumbs/" + File.basename(image, ".*") + ".jpg").inspect},"
+        # str << "  link: #{i == 0 && work[:link].present? ? work[:link].inspect : "nil"},"
+        str << "  link: nil,"
         str << "  work: work,"
         str << ")"
       }
@@ -50,5 +55,32 @@ namespace :seeder do
 
     puts str.join("\n")
     File.write("db/seeds.rb", str.join("\n"))
+  end
+
+  desc "サムネイル画像を生成します"
+  task :generate_thumbs do
+    # 画像一覧を取得
+    file_names = Dir.glob('public/images/*')
+
+    `mkdir -p public/images/thumbs`
+
+    # サムネイル生成
+    file_names.each do |file_name|
+      next unless file_name.end_with?(".png", ".jpg")
+      puts "next file: #{file_name}"
+
+      image = Magick::ImageList.new(file_name)
+
+      # 400x400 のボックス内に収める
+      # resize_to_limit は使えなかった
+      if image.columns > 400 || image.rows > 400
+        image.resize_to_fit!(400, 400)
+      end
+
+      image.format = 'JPEG'
+      image.write('public/images/thumbs/' + File.basename(file_name, ".*") + ".jpg") do
+        self.quality = 90
+      end
+    end
   end
 end

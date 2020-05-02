@@ -18,7 +18,7 @@ div
       - work.images.each_with_index do |image, i|
         p.image-gallery
           - image_html = capture do
-            = image_tag "/#{image.path}", width: "#{(i == 0 ? 400 : 300)}px", class: "picture"
+            = image_tag "/#{image.thumb_path}", width: "#{(i == 0 ? 400 : 300)}px", class: "picture"
           /= link_to_if image.link.present?, image_html, image.link, target: "_blank"
           = link_to_if true, image_html, "/#{image.path}", target: "_blank"
 

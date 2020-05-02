@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_30_130125) do
+ActiveRecord::Schema.define(version: 2020_05_02_212943) do
 
   create_table "external_links", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2020_04_30_130125) do
     t.string "name"
     t.integer "index"
     t.string "path"
+    t.string "thumb_path"
     t.string "link"
     t.bigint "work_id", null: false
     t.datetime "created_at", precision: 6, null: false
