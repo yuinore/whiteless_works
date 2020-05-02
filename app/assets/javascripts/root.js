@@ -14,3 +14,13 @@ $(function(){
     $(window).scroll(update_fadein);
     update_fadein(null, 0);
 });
+
+$(function(){
+  $('.image-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+});

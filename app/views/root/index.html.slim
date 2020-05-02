@@ -8,7 +8,7 @@ div
       | わいとれすわーくすは、楽しいを作るクリエイター集団です。
 
   - @works.each do |work|
-    .container
+    div.container
       h3
         = simple_format(h(work.name))
       = simple_format(h(work.caption))
@@ -16,10 +16,11 @@ div
         = link_to external_link.name, external_link.link
         br
       - work.images.each_with_index do |image, i|
-        p
+        p.image-gallery
           - image_html = capture do
             = image_tag "/#{image.path}", width: "#{(i == 0 ? 400 : 300)}px", class: "picture"
-          = link_to_if image.link.present?, image_html, image.link, target: "_blank"
+          /= link_to_if image.link.present?, image_html, image.link, target: "_blank"
+          = link_to_if true, image_html, "/#{image.path}", target: "_blank"
 
   .container
     |  whiteless.works official website / produced by yuinore
