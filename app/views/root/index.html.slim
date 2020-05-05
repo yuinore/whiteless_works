@@ -6,6 +6,7 @@ div
       | whiteless.works
     p
       | わいとれすわーくすは、楽しいを作るクリエイター集団です。
+    = image_tag "/favicon.png", height: "128px", class: "picture"
 
   - @works.each do |work|
     div.container
@@ -13,8 +14,8 @@ div
         = simple_format(h(work.name))
       = simple_format(h(work.caption))
       - work.external_links.each_with_index do |external_link, i|
-        = link_to external_link.name, external_link.link
-        br
+        = link_to external_link.name, external_link.link, class: "external-link"
+      br
       - work.images.each_with_index do |image, i|
         span.image-gallery
           - image_html = capture do
