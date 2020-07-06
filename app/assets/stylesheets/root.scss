@@ -17,10 +17,13 @@ body {
     background-color: #5db69a;
     text-align: center;
     line-height: 1.25em;
+    min-width: 400px;
 }
 
-.container {
-    width: 100%;
+div.container-container {
+}
+
+div.container {
     margin: 0;
     padding: 3em;
 }
