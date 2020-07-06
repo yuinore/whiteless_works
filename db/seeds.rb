@@ -68,7 +68,7 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "whiteless.works",
+  name: "Visit Website",
   link: "https://whiteless.works/",
   index: 0,
   work: work,
@@ -169,6 +169,22 @@ ExternalLink.create(
   name: "DLsite",
   link: "https://www.dlsite.com/maniax/work/=/product_id/RJ261585.html",
   index: 2,
+  work: work,
+)
+work = Work.create(
+         name: "Rainbow Night Party",
+         caption: "BMS\n2019/6/24\nAuthor: Yu^ta, tolz",
+       )
+ExternalLink.create(
+  name: "Event Page",
+  link: "https://venue.bmssearch.net/bmsshuin2/79",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "YouTube",
+  link: "https://www.youtube.com/watch?v=RKpOW4jJLaI",
+  index: 1,
   work: work,
 )
 work = Work.create(
@@ -380,14 +396,14 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "Youtube",
+  name: "YouTube",
   link: "https://www.youtube.com/watch?v=vU8lj_drm9A",
   index: 0,
   work: work,
 )
 work = Work.create(
          name: "にゃーんEP",
-         caption: "音楽CD\n2018/8/10\nコンピレーションアルバム",
+         caption: "音楽CD\n2018/8/10\nコンピレーションアルバム\nJacket: hato",
        )
 Image.create(
   name: "にゃーんEP_0",
@@ -420,7 +436,7 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "wiki.mid2bms.net",
+  name: "Visit Website",
   link: "http://wiki.mid2bms.net/",
   index: 0,
   work: work,
@@ -493,6 +509,18 @@ Image.create(
   link: nil,
   work: work,
 )
+ExternalLink.create(
+  name: "Event Page",
+  link: "https://venue.bmssearch.net/3/62",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "YouTube (Unofficial)",
+  link: "https://www.youtube.com/watch?v=jvb3KKrLJT0",
+  index: 1,
+  work: work,
+)
 work = Work.create(
          name: "yuinore.moe",
          caption: "Website\n2017/6/22\nApache + static HTML",
@@ -508,7 +536,7 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "yuinore.moe",
+  name: "Visit Website",
   link: "https://yuinore.moe/",
   index: 0,
   work: work,
@@ -528,7 +556,7 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "sktdn.yuinore.net",
+  name: "Visit Website",
   link: "https://sktdn.yuinore.net/",
   index: 0,
   work: work,
@@ -608,7 +636,7 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "Youtube",
+  name: "YouTube (Unofficial)",
   link: "https://www.youtube.com/watch?v=SV_BxJzKcnY",
   index: 0,
   work: work,
@@ -654,7 +682,7 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "Youtube",
+  name: "YouTube",
   link: "https://www.youtube.com/watch?v=tp-UAMO69qQ",
   index: 0,
   work: work,
@@ -685,6 +713,24 @@ Image.create(
   link: nil,
   work: work,
 )
+ExternalLink.create(
+  name: "Event Page",
+  link: "https://colosseo.nekokan.dyndns.info/c04_shuffle3/detail/view/57/",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "YouTube",
+  link: "https://www.youtube.com/watch?v=_8ThGMimXTk",
+  index: 1,
+  work: work,
+)
+ExternalLink.create(
+  name: "ニコニコ動画",
+  link: "https://www.nicovideo.jp/watch/sm28279745",
+  index: 2,
+  work: work,
+)
 work = Work.create(
          name: "Strawberry Mint Chocolate",
          caption: "音楽CD\n2015/10/25 (M3 2015秋)\nAuthor: Yu^ta, mizninjin, yuinore",
@@ -705,6 +751,12 @@ ExternalLink.create(
   index: 0,
   work: work,
 )
+ExternalLink.create(
+  name: "特設サイト",
+  link: "https://strawberry-mint-chocolate.com/",
+  index: 1,
+  work: work,
+)
 work = Work.create(
          name: "Busy Factory",
          caption: "映像作品\n2015/10/03\nAuthor: yuinore, こんにチワワ, Yu^ta",
@@ -720,7 +772,7 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "Youtube",
+  name: "YouTube",
   link: "https://www.youtube.com/watch?v=p2dy2LkOAzs",
   index: 0,
   work: work,
@@ -733,7 +785,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "yuinore.net",
-         caption: "Website\n2015/3/12?\nWordpress + Ready-made theme",
+         caption: "Website\n2015/3/12?\nWordPress + Ready-made theme",
        )
 Image.create(
   name: "yuinore.net_0",
@@ -746,7 +798,7 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "yuinore.net",
+  name: "Visit Website",
   link: "http://yuinore.net/",
   index: 0,
   work: work,
@@ -763,6 +815,18 @@ Image.create(
   thumb_width: 256,
   thumb_height: 256,
   link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "Event Page",
+  link: "http://manbow.nothing.sh/event/event.cgi?action=More_def&num=34&event=98",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "YouTube (Unofficial)",
+  link: "https://www.youtube.com/watch?v=7pS-KUBGigU",
+  index: 1,
   work: work,
 )
 work = Work.create(
@@ -810,7 +874,7 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "Youtube",
+  name: "YouTube",
   link: "https://www.youtube.com/watch?v=zsQD9_drLbY",
   index: 0,
   work: work,
