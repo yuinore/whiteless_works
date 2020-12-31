@@ -2,8 +2,94 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "魔法少女チノ",
+         caption: "イラスト\n2020/12/4\n制作時間: 30時間21分",
+       )
+Image.create(
+  name: "魔法少女チノ_0",
+  index: 0,
+  path: "images/illust_2020_magical.png",
+  thumb_path: "images/thumbs/illust_2020_magical.jpg",
+  thumb_width: 379,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "pixiv",
+  link: "https://www.pixiv.net/artworks/86074471",
+  index: 0,
+  work: work,
+)
+work = Work.create(
+         name: "フユちゃん つかまえた！",
+         caption: "同人誌\n2020/9/27\nAuthor: hato\nGuest: みりゃるLv.1\n制作時間: 332時間18分",
+       )
+Image.create(
+  name: "フユちゃん つかまえた！_0",
+  index: 0,
+  path: "images/books_011_fuyu.png",
+  thumb_path: "images/thumbs/books_011_fuyu.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://booth.pm/ja/items/2406621",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=718157",
+  index: 1,
+  work: work,
+)
+work = Work.create(
+         name: "マヤちゃんとランドセル",
+         caption: "イラスト\n2020/8/8\n制作時間: 43時間7分",
+       )
+Image.create(
+  name: "マヤちゃんとランドセル_0",
+  index: 0,
+  path: "images/illust_2020_maya.png",
+  thumb_path: "images/thumbs/illust_2020_maya.jpg",
+  thumb_width: 272,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "pixiv",
+  link: "https://www.pixiv.net/artworks/83515548",
+  index: 0,
+  work: work,
+)
+work = Work.create(
+         name: "シャロちゃん",
+         caption: "イラスト\n2020/7/15\n制作時間: 31時間58分",
+       )
+Image.create(
+  name: "シャロちゃん_0",
+  index: 0,
+  path: "images/illust_2020_syaro.png",
+  thumb_path: "images/thumbs/illust_2020_syaro.jpg",
+  thumb_width: 400,
+  thumb_height: 264,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "pixiv",
+  link: "https://www.pixiv.net/artworks/82979336",
+  index: 0,
+  work: work,
+)
+work = Work.create(
          name: "ねこみみえっちイラスト本 4",
-         caption: "同人誌\n2020/5/5\nAuthor: hato\nGuest: シロ9じら, いなじ, るりあ, 風倉ふう, わたるん, 矢野原ききょう\n制作時間: 40時間19分",
+         caption: "同人誌\n2020/5/5\nAuthor: hato\nGuest: シロ9じら, いなじ, るりあ, 風倉ふう, わたるん, 矢野原ききょう\n制作時間: 40時間19分\r\n製作期間: 50日（うち稼働9日）",
        )
 Image.create(
   name: "ねこみみえっちイラスト本 4_0",
@@ -29,7 +115,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "チマメ隊 つかまえた！",
-         caption: "同人誌\n2020/5/5\nAuthor: hato\nGuest: ぽえりむ, ぼす, こなもち\n制作時間: 246時間48分",
+         caption: "同人誌\n2020/5/5\nAuthor: hato\nGuest: ぽえりむ, ぼす, こなもち\n制作時間: 246時間48分\n製作期間: 71日（うち稼働45日）",
        )
 Image.create(
   name: "チマメ隊 つかまえた！_0",
