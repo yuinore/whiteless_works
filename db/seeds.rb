@@ -2,6 +2,26 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "hatoq.net",
+         caption: "Website\n2021/2/25\nRuby on Rails",
+       )
+Image.create(
+  name: "hatoq.net_0",
+  index: 0,
+  path: "images/website_hatoqnet.png",
+  thumb_path: "images/thumbs/website_hatoqnet.jpg",
+  thumb_width: 332,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "Visit Website",
+  link: "https://hatoq.net/",
+  index: 0,
+  work: work,
+)
+work = Work.create(
          name: "魔法少女チノ",
          caption: "イラスト\n2020/12/4\n制作時間: 30時間21分",
        )
