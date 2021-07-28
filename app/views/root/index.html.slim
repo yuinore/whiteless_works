@@ -25,6 +25,7 @@ div.container-container
                         height: "auto", \
                         class: "picture", \
                         srcset: "/images/thumbs/#{File.basename(image.thumb_path, ".*")}@2x.jpg 2x"
+          / a
           /= link_to_if image.link.present?, image_html, image.link, target: "_blank"
           = link_to_if true, image_html, "/#{image.path}"
         - if i.zero?
