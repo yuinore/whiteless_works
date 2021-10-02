@@ -2,6 +2,116 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "チマメ隊もっとつかまえた！",
+         caption: "同人誌\n2021/8/28\nAuthor: hato\nGuest: ゆーね, おむすび, もやなる\n制作時間: 322時間20分",
+       )
+Image.create(
+  name: "チマメ隊もっとつかまえた！_0",
+  index: 0,
+  path: "images/books_015_trio2.png",
+  thumb_path: "images/thumbs/books_015_trio2.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/3231502",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1062655",
+  index: 1,
+  work: work,
+)
+ExternalLink.create(
+  name: "とらのあな",
+  link: "https://ec.toranoana.jp/tora_r/ec/item/040030929827",
+  index: 2,
+  work: work,
+)
+work = Work.create(
+         name: "うさぎえっちイラスト本",
+         caption: "同人誌\n2021/8/28\r\nAuthor: hato",
+       )
+Image.create(
+  name: "うさぎえっちイラスト本_0",
+  index: 0,
+  path: "images/books_014_usapic.png",
+  thumb_path: "images/thumbs/books_014_usapic.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/3231482",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1062651",
+  index: 1,
+  work: work,
+)
+work = Work.create(
+         name: "メグちゃん つかまえた！",
+         caption: "同人誌\n2021/5/1\nAuthor: hato\nGuest: もやなる\n制作時間: 219時間1分",
+       )
+Image.create(
+  name: "メグちゃん つかまえた！_0",
+  index: 0,
+  path: "images/books_013_megu.png",
+  thumb_path: "images/thumbs/books_013_megu.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/2926868",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=833019",
+  index: 1,
+  work: work,
+)
+work = Work.create(
+         name: "マヤちゃん つかまえた！",
+         caption: "同人誌\n2021/5/1\nAuthor: hato\nGuest: おむすび\n制作時間: 282時間34分",
+       )
+Image.create(
+  name: "マヤちゃん つかまえた！_0",
+  index: 0,
+  path: "images/books_012_maya.png",
+  thumb_path: "images/thumbs/books_012_maya.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/2926841",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=833018",
+  index: 1,
+  work: work,
+)
+work = Work.create(
          name: "hatoq.net",
          caption: "Website\n2021/2/25\nRuby on Rails",
        )
@@ -23,7 +133,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "魔法少女チノ",
-         caption: "イラスト\n2020/12/4\n制作時間: 30時間21分",
+         caption: "イラスト\n2020/12/4\r\nAuthor: hato\n制作時間: 30時間21分",
        )
 Image.create(
   name: "魔法少女チノ_0",
@@ -69,7 +179,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "マヤちゃんとランドセル",
-         caption: "イラスト\n2020/8/8\n制作時間: 43時間7分",
+         caption: "イラスト\n2020/8/8\r\nAuthor: hato\n制作時間: 43時間7分",
        )
 Image.create(
   name: "マヤちゃんとランドセル_0",
@@ -89,7 +199,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "シャロちゃん",
-         caption: "イラスト\n2020/7/15\n制作時間: 31時間58分",
+         caption: "イラスト\n2020/7/15\nAuthor: hato\n制作時間: 31時間58分",
        )
 Image.create(
   name: "シャロちゃん_0",
@@ -835,6 +945,48 @@ ExternalLink.create(
   name: "ニコニコ動画",
   link: "https://www.nicovideo.jp/watch/sm28279745",
   index: 2,
+  work: work,
+)
+work = Work.create(
+         name: "caustics",
+         caption: "3DCG\n2016/1/13",
+       )
+Image.create(
+  name: "caustics_0",
+  index: 0,
+  path: "images/3dcg_caustics.png",
+  thumb_path: "images/thumbs/3dcg_caustics.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
+  link: nil,
+  work: work,
+)
+work = Work.create(
+         name: "voxel",
+         caption: "3DCG\n2016/1/3",
+       )
+Image.create(
+  name: "voxel_0",
+  index: 0,
+  path: "images/3dcg_voxel.png",
+  thumb_path: "images/thumbs/3dcg_voxel.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
+  link: nil,
+  work: work,
+)
+work = Work.create(
+         name: "curve",
+         caption: "3DCG\n2016/1/2",
+       )
+Image.create(
+  name: "curve_0",
+  index: 0,
+  path: "images/3dcg_curve.png",
+  thumb_path: "images/thumbs/3dcg_curve.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
+  link: nil,
   work: work,
 )
 work = Work.create(
