@@ -1,0 +1,29 @@
+= javascript_include_tag "root.js"
+
+div.container-container
+  .container
+    h1
+      | whiteless.works
+    p
+      | ギャラリー
+
+  .container
+    .flex-images-container
+      .flex-images
+        - @works.each do |work|
+          - work.images.each_with_index do |image, i|
+            div[class="item" data-w="#{image.thumb_width}" data-h="#{image.thumb_height}"]
+              span.image-gallery
+                - image_html = capture do
+                  = image_tag "/#{image.thumb_path}", \
+                              srcset: "/images/thumbs/#{File.basename(image.thumb_path, ".*")}@2x.jpg 2x"
+                = link_to_if true, image_html, "/#{image.path}"
+
+  .container
+    | <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="whiteless works official website" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  .container
+    |  whiteless works official website / designed by yuinore
+
+javascript:
+  $('.flex-images').flexImages({"container":".item"});

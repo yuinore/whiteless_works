@@ -58,15 +58,22 @@ img.picture {
     max-width:100%;
 }
 
-div.container:nth-child(3n+1) img.picture {
+.flex-images img {
+    border-radius: 8px;
+}
+
+div.container:nth-child(3n+1) img.picture,
+div.container:nth-child(3n+1) .flex-images img {
     box-shadow: #3d967a 2px 2px 8px 0px;
 }
 
-div.container:nth-child(3n+2) img.picture {
+div.container:nth-child(3n+2) img.picture,
+div.container:nth-child(3n+2) .flex-images img {
     box-shadow: #cc7799 2px 2px 8px 0px;
 }
 
-div.container:nth-child(3n+3) img.picture {
+div.container:nth-child(3n+3) img.picture,
+div.container:nth-child(3n+3) .flex-images img {
     box-shadow: #997755 2px 2px 8px 0px;
 }
 

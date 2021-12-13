@@ -1,0 +1,15 @@
+.flex-images-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0;
+}
+
+.flex-images {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.flex-images .item {
+    border-width: 0px !important;
+    overflow: visible !important;
+}
