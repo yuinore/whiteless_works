@@ -4,6 +4,9 @@ div.container-container
   .container
     h1
       = simple_format(h(@work.name))
+    br
+    = link_to "Back to Top", root_path, class: "external-link"
+    = link_to "ギャラリー", gallery_path, class: "external-link"
 
   - @works.each do |work|
     .container
