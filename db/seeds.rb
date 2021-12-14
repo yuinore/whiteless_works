@@ -661,6 +661,12 @@ ExternalLink.create(
   index: 0,
   work: work,
 )
+ExternalLink.create(
+  name: "Crossfade",
+  link: "https://soundcloud.com/strawberry-mint-chocolate/c94ep-demo1-10b",
+  index: 1,
+  work: work,
+)
 work = Work.create(
          name: "Mid2BMS Wiki",
          slug: "websites/mid2bms-wiki",
@@ -915,6 +921,12 @@ ExternalLink.create(
   index: 0,
   work: work,
 )
+ExternalLink.create(
+  name: "Crossfade",
+  link: "https://soundcloud.com/strawberry-mint-chocolate/c91-planisphere-demo2",
+  index: 1,
+  work: work,
+)
 work = Work.create(
          name: "Sunny",
          slug: "movies/sunny",
@@ -1051,6 +1063,12 @@ ExternalLink.create(
   name: "特設サイト",
   link: "https://strawberry-mint-chocolate.com/",
   index: 1,
+  work: work,
+)
+ExternalLink.create(
+  name: "Crossfade",
+  link: "https://soundcloud.com/strawberry-mint-chocolate/strawberry-mint-chocolate-xfd",
+  index: 2,
   work: work,
 )
 work = Work.create(
