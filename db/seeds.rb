@@ -3,6 +3,7 @@ Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
          name: "チマメ隊もっとつかまえた！",
+         slug: "books/trio2",
          caption: "同人誌\n2021/8/28\nAuthor: hato\nGuest: ゆーね, おむすび, もやなる\n制作時間: 322時間20分",
        )
 Image.create(
@@ -35,6 +36,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "うさぎえっちイラスト本",
+         slug: "books/usapic",
          caption: "同人誌\n2021/8/28\r\nAuthor: hato",
        )
 Image.create(
@@ -61,6 +63,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "メグちゃん つかまえた！",
+         slug: "books/megu",
          caption: "同人誌\n2021/5/1\nAuthor: hato\nGuest: もやなる\n制作時間: 219時間1分",
        )
 Image.create(
@@ -87,6 +90,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "マヤちゃん つかまえた！",
+         slug: "books/maya",
          caption: "同人誌\n2021/5/1\nAuthor: hato\nGuest: おむすび\n制作時間: 282時間34分",
        )
 Image.create(
@@ -113,6 +117,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "hatoq.net",
+         slug: "websites/hatoqnet",
          caption: "Website\n2021/2/25\nRuby on Rails",
        )
 Image.create(
@@ -133,6 +138,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "魔法少女チノ",
+         slug: "illust/magical",
          caption: "イラスト\n2020/12/4\r\nAuthor: hato\n制作時間: 30時間21分",
        )
 Image.create(
@@ -153,6 +159,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "フユちゃん つかまえた！",
+         slug: "books/fuyu",
          caption: "同人誌\n2020/9/27\nAuthor: hato\nGuest: みりゃるLv.1\n制作時間: 332時間18分",
        )
 Image.create(
@@ -179,6 +186,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "マヤちゃんとランドセル",
+         slug: "illust/maya",
          caption: "イラスト\n2020/8/8\r\nAuthor: hato\n制作時間: 43時間7分",
        )
 Image.create(
@@ -199,6 +207,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "シャロちゃん",
+         slug: "illust/syaro",
          caption: "イラスト\n2020/7/15\nAuthor: hato\n制作時間: 31時間58分",
        )
 Image.create(
@@ -219,6 +228,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "ねこみみえっちイラスト本 4",
+         slug: "books/neko4",
          caption: "同人誌\n2020/5/5\nAuthor: hato\nGuest: シロ9じら, いなじ, るりあ, 風倉ふう, わたるん, 矢野原ききょう\n制作時間: 40時間19分\r\n製作期間: 50日（うち稼働9日）",
        )
 Image.create(
@@ -245,6 +255,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "チマメ隊 つかまえた！",
+         slug: "books/trio",
          caption: "同人誌\n2020/5/5\nAuthor: hato\nGuest: ぽえりむ, ぼす, こなもち\n制作時間: 246時間48分\n製作期間: 71日（うち稼働45日）",
        )
 Image.create(
@@ -271,6 +282,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "whiteless.works",
+         slug: "websites/whiteless",
          caption: "Website\n2020/4/26\nRuby on Rails",
        )
 Image.create(
@@ -291,6 +303,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "くらんちゃん つかまえた！",
+         slug: "books/clan",
          caption: "同人誌\n2019/12/30\nAuthor: hato\nGuest: ラクシュみぃ, ゆーね, こなもち\n制作時間: 88時間24分",
        )
 Image.create(
@@ -317,6 +330,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "チノちゃん つかまえた！",
+         slug: "books/chino",
          caption: "同人誌\n2019/11/3\nAuthor: hato\nGuest: ラクシュみぃ, からたに\n制作時間: 87時間30分",
        )
 Image.create(
@@ -343,6 +357,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "あまいこと",
+         slug: "movies/sweets",
          caption: "映像作品\nComing soon...\nAuthor: yuinore, hato, K. Mimura, Yu^ta, mizninjin",
        )
 Image.create(
@@ -357,6 +372,7 @@ Image.create(
 )
 work = Work.create(
          name: "ねこみみえっちイラスト本 3",
+         slug: "books/neko3",
          caption: "同人誌\n2019/8/11\nAuthor: hato\nGuest: こなもち, つきのせ, にや, わすく\n制作時間: 52時間30分",
        )
 Image.create(
@@ -389,6 +405,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "Rainbow Night Party",
+         slug: "bms/rnp",
          caption: "BMS\n2019/6/24\nAuthor: Yu^ta, tolz",
        )
 ExternalLink.create(
@@ -405,6 +422,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "ひかりちゃん つかまえた！",
+         slug: "books/gleam",
          caption: "同人誌\n2019/6/16\nAuthor: hato\nGuest: 菊, こなもち\n制作時間: 105時間30分",
        )
 Image.create(
@@ -437,6 +455,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "花名ちゃん つかまえた！",
+         slug: "books/flora",
          caption: "同人誌\n2019/4/29\nAuthor: hato",
        )
 Image.create(
@@ -469,6 +488,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "柚音ちゃん つかまえた！",
+         slug: "books/yune",
          caption: "同人誌\n2019/3/10\nAuthor: hato\nGuest: ゆーね, ふれぁ",
        )
 Image.create(
@@ -501,6 +521,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "ねこみみえっちイラスト本 2",
+         slug: "books/neko2",
          caption: "同人誌\n2018/12/31\nAuthor: hato",
        )
 Image.create(
@@ -527,6 +548,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "ねこみみえっちイラスト本 りみっくす！",
+         slug: "books/neko1",
          caption: "同人誌\n2018/12/31\nAuthor: hato\nGuest: furea2",
        )
 Image.create(
@@ -559,6 +581,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "城主の時代だ！",
+         slug: "movies/castleage",
          caption: "映像作品\n2018/12/22\nAuthor: yuinore, Yu^ta, furea2",
        )
 Image.create(
@@ -619,6 +642,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "にゃーんEP",
+         slug: "cds/nyan",
          caption: "音楽CD\n2018/8/10\nコンピレーションアルバム\nJacket: hato",
        )
 Image.create(
@@ -639,6 +663,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "Mid2BMS Wiki",
+         slug: "websites/mid2bms-wiki",
          caption: "Website\n2018/3/10\nApache + PukiWiki",
        )
 Image.create(
@@ -659,6 +684,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "わたしのて",
+         slug: "movies/flyup",
          caption: "映像作品\nComing soon...\nAuthor: yuinore, にせねこ, こんにチワワ, Yu^ta, mizninjin",
        )
 Image.create(
@@ -713,6 +739,7 @@ Image.create(
 )
 work = Work.create(
          name: "Mana",
+         slug: "bms/mana",
          caption: "BMS\n2017/7/23\nAuthor: Yu^ta, yuinore",
        )
 Image.create(
@@ -739,6 +766,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "yuinore.moe",
+         slug: "websites/yuinore-moe",
          caption: "Website\n2017/6/22\nApache + static HTML",
        )
 Image.create(
@@ -759,6 +787,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "鮭トドン",
+         slug: "websites/sktdn",
          caption: "Website\n2017/5/11\nPHP + MySql2 + Bootstrap (no framework)",
        )
 Image.create(
@@ -779,6 +808,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "Strawberry Mint Chocolate BMS Package",
+         slug: "bmspacks/smc",
          caption: "BMSパッケージ\n2017/2/14",
        )
 Image.create(
@@ -799,6 +829,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "いちご みんと ちょこれーと",
+         slug: "movies/smc",
          caption: "映像作品\n2017/2/14\nFRENZ 2014 出展作品\nAuthor: yuinore, こんにチワワ, Yu^ta, mizninjin\nGuest: バリキオス, ちゃば, 守鈴, Azel",
        )
 Image.create(
@@ -865,6 +896,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "Planisphere",
+         slug: "cds/planisphere",
          caption: "音楽CD\n2016/12/31 (C91 3日目)\nAuthor: Yu^ta, mizninjin, yuinore",
        )
 Image.create(
@@ -885,6 +917,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "Sunny",
+         slug: "movies/sunny",
          caption: "映像作品\n2016/09/24\nAuthor: yuinore, Yu^ta",
        )
 Image.create(
@@ -917,6 +950,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "CHAiNSAW",
+         slug: "bms/chainsaw",
          caption: "BMS\n2016/2/21\nAuthor: Yu^ta, yuinore",
        )
 Image.create(
@@ -949,6 +983,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "caustics",
+         slug: "3dcgs/caustics",
          caption: "3DCG\n2016/1/13",
        )
 Image.create(
@@ -963,6 +998,7 @@ Image.create(
 )
 work = Work.create(
          name: "voxel",
+         slug: "3dcgs/voxel",
          caption: "3DCG\n2016/1/3",
        )
 Image.create(
@@ -977,6 +1013,7 @@ Image.create(
 )
 work = Work.create(
          name: "curve",
+         slug: "3dcgs/curve",
          caption: "3DCG\n2016/1/2",
        )
 Image.create(
@@ -991,6 +1028,7 @@ Image.create(
 )
 work = Work.create(
          name: "Strawberry Mint Chocolate",
+         slug: "cds/smc",
          caption: "音楽CD\n2015/10/25 (M3 2015秋)\nAuthor: Yu^ta, mizninjin, yuinore",
        )
 Image.create(
@@ -1017,6 +1055,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "Busy Factory",
+         slug: "movies/busyfactory",
          caption: "映像作品\n2015/10/03\nAuthor: yuinore, こんにチワワ, Yu^ta",
        )
 Image.create(
@@ -1043,6 +1082,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "yuinore.net",
+         slug: "websites/yuinore-net",
          caption: "Website\n2015/3/12?\nWordPress + Ready-made theme",
        )
 Image.create(
@@ -1063,6 +1103,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "Rainy",
+         slug: "bms/rainy",
          caption: "BMS\n2014/12/8\nAuthor: Yu^ta, yuinore",
        )
 Image.create(
@@ -1089,6 +1130,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "第λ回 自称超有名BMS作家が物申す！",
+         slug: "bmspacks/famousbms",
          caption: "BMSパッケージ\n2014/9/8",
        )
 Image.create(
@@ -1119,6 +1161,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "現実をカットアップしてみた",
+         slug: "movies/cutup",
          caption: "映像作品\n2014/09/07\nAuthor: yuinore, Yu^ta\n",
        )
 Image.create(
@@ -1145,6 +1188,7 @@ ExternalLink.create(
 )
 work = Work.create(
          name: "Mid2BMS",
+         slug: "software/mid2bms",
          caption: "Software\n2014/4/1\nC# + Windows Forms",
        )
 Image.create(

@@ -3,18 +3,10 @@
 div.container-container
   .container
     h1
-      | whiteless.works
-    p
-      | わいとれすわーくすは、楽しいを作るクリエイター集団です。
-    = image_tag "/favicon.png", height: "128px", class: "picture-static"
-    br
-    = link_to "ギャラリー", gallery_path, class: "external-link"
+      = simple_format(h(@work.name))
 
   - @works.each do |work|
     div.container
-      h3
-        = simple_format(h(work.name))
-
       - work.images.each_with_index do |image, i|
         span.image-gallery
           - image_html = capture do
@@ -22,7 +14,7 @@ div.container-container
                         width: "#{image.thumb_width}px", \
                         # height: "#{image.thumb_height}px", \
                         height: "auto", \
-                        class: "picture", \
+                        class: "picture-static", \
                         srcset: "/images/thumbs/#{File.basename(image.thumb_path, ".*")}@2x.jpg 2x"
           / a
           /= link_to_if image.link.present?, image_html, image.link, target: "_blank"
@@ -31,14 +23,11 @@ div.container-container
           br
       br
 
-      - category, workname = work.slug.split("/")
-      = link_to "詳細", show_work_path(category: category, name: workname), class: "external-link"
-      - work.external_links.each_with_index do |external_link, i|
+      - @work.external_links.each_with_index do |external_link, i|
         = link_to external_link.name, external_link.link, class: "external-link"
-      br
 
       p
-        = simple_format(h(work.caption))
+        = simple_format(h(@work.caption))
 
   .container
     = render 'layouts/footer'

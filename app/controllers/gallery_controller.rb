@@ -1,6 +1,6 @@
 class GalleryController < ApplicationController
   def index
-    @title = "Gallery"
+    @title = "ギャラリー"
     @works = Work.all
   end
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_02_225326) do
+ActiveRecord::Schema.define(version: 2021_12_13_213140) do
 
   create_table "external_links", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
@@ -41,6 +41,8 @@ ActiveRecord::Schema.define(version: 2020_05_02_225326) do
     t.string "caption"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "slug"
+    t.index ["slug"], name: "index_works_on_slug", unique: true
   end
 
   add_foreign_key "external_links", "works"

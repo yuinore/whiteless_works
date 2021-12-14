@@ -19,12 +19,13 @@ namespace :seeder do
     str << "ExternalLink.destroy_all"
 
     stable_sort_i = 0
-    obj.reject { |work| work[:name].blank? }.
+    obj.reject { |work| work[:enabled].blank? }.
         sort_by { |work| [work[:published_at], stable_sort_i += 1] }.
         reverse.
         each { |work|
       str << "work = Work.create("
       str << "         name: #{work[:name].inspect},"
+      str << "         slug: #{work[:slug].inspect},"
       str << "         caption: #{(work[:category] + "\n" + work[:caption]).inspect},"
       str << "       )"
 

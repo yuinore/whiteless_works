@@ -1,0 +1,10 @@
+div
+  a[href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+    class="twitter-share-button"
+    data-text="#{@title.present? ? "#{@title} | whiteless.#{0x200B.chr("UTF-8")}works" : "whiteless works official website"}"
+    data-show-count="false"]
+    Tweet
+  | <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+br
+div
+  |  whiteless works official website / designed by yuinore
