@@ -23,6 +23,10 @@ class WorksController < ApplicationController
       @soundcloud_embed_link = soundcloud_link.link
     end
 
+    if work.images.present?
+      @twitter_card_image = "/images/cards/#{File.basename(work.images[0].path, ".*")}.jpg"
+    end
+
     @title = work.name
     @work = work
     @works = [work]

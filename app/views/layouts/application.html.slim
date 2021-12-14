@@ -11,11 +11,11 @@ html
     = javascript_pack_tag 'application'
 
     /! Twitter Card
-    meta[name="twitter:card" content="summary"]
+    meta[name="twitter:card" content="#{@twitter_card_image ? "summary_large_image" : "summary"}"]
     meta[name="twitter:site" content="@yuinore"]
     meta[name="twitter:title" content="whiteless.works"]
     meta[name="twitter:description" content="わいとれすわーくすは、楽しいを作るクリエイター集団です。"]
-    meta[name="twitter:image" content="https://whiteless.works/favicon.png"]
+    meta[name="twitter:image" content="#{@twitter_card_image || "/favicon.png"}"]
 
     /! JS, CSS
     link[rel="stylesheet" href="/magnific-popup/magnific-popup.css"]
@@ -31,5 +31,6 @@ html
     link[rel="icon" href="/favicon.png" sizes="192x192"]
     link[rel="apple-touch-icon-precomposed" href="/favicon.png"]
     meta[name="msapplication-TileImage" content="/favicon.png"]
+
   body
     = yield
