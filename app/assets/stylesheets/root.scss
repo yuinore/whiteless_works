@@ -42,6 +42,7 @@ div.container:last-child {
 
 h1 {
     filter: drop-shadow(0.1em 0.1em 0.05em rgba(255, 255, 255, 0.3));
+    line-height: 1.25em; /* apply new font-size */
 }
 
 div.container:nth-child(3n+1) {
