@@ -23,6 +23,8 @@ class WorksController < ApplicationController
       @soundcloud_embed_link = soundcloud_link.link
     end
 
+    @twitter_card_title = work.name
+    # @twitter_card_description = work.caption # デフォルト文言のままにしておく
     if work.images.present?
       @twitter_card_image = "/images/cards/#{File.basename(work.images[0].path, ".*")}.jpg"
     end

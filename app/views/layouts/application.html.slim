@@ -13,8 +13,8 @@ html
     /! Twitter Card
     meta[name="twitter:card" content="#{@twitter_card_image ? "summary_large_image" : "summary"}"]
     meta[name="twitter:site" content="@yuinore"]
-    meta[name="twitter:title" content="whiteless.works"]
-    meta[name="twitter:description" content="わいとれすわーくすは、楽しいを作るクリエイター集団です。"]
+    meta[name="twitter:title" content="#{@twitter_card_title || "whiteless.works"}"]
+    meta[name="twitter:description" content="#{@twitter_card_description || "わいとれすわーくすは、楽しいを作るクリエイター集団です。"}"]
     meta[name="twitter:image" content="https://whiteless.works#{@twitter_card_image || "/favicon.png"}"]
 
     /! JS, CSS
