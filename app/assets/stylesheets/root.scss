@@ -68,7 +68,7 @@ img.picture {
     transform: translateY(20px);
     transition: all 1s;
     border-radius: 8px;
-    max-width:100%;
+    max-width: calc(99% - 1em);
 }
 
 
@@ -78,7 +78,7 @@ img.picture-static {
 
     /* fadein */
     border-radius: 8px;
-    max-width:100%;
+    max-width: calc(99% - 1em);
 }
 
 .flex-images img {
