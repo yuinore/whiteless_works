@@ -6,7 +6,18 @@ div.container-container
       = simple_format(h(@work.name))
 
   - @works.each do |work|
-    div.container
+    .container
+      - if @youtube_embed_link
+        p
+          iframe[width="560"
+                 height="315"
+                 src="#{@youtube_embed_link}"
+                 title="YouTube video player"
+                 frameborder="0"
+                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                 allowfullscreen]
+        br
+
       - work.images.each_with_index do |image, i|
         span.image-gallery
           - image_html = capture do
