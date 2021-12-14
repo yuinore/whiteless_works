@@ -1,0 +1,16 @@
+= javascript_include_tag "root.js"
+
+div.container-container
+  .container
+    h1
+      | reactions
+  .container
+    table[border="3" align="center"]
+      - @reactions.each do |reaction|
+        tr
+          td
+            = reaction.slug
+          td
+            = reaction.codepoint
+          td
+            = reaction.count

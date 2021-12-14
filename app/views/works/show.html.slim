@@ -54,6 +54,30 @@ div.container-container
 
       p
         = simple_format(h(@work.caption))
+      br
+
+      - @emojis.each do |codepoint|
+        = link_to "#", class: "external-link", onclick: "click_reaction('#{@work.slug}', '#{codepoint}'); return false;" do
+          img src="/twemoji/#{codepoint}.png" class="emoji"
+          span id="reactions_count_#{codepoint}"
+            - if @reactions_count[codepoint]&.count
+              | &nbsp;
+              = @reactions_count[codepoint]&.count || "0"
 
   .container
     = render 'layouts/footer'
+
+javascript:
+  function reaction_callback(codepoint, data) {
+    document.getElementById("reactions_count_" + codepoint).innerHTML = "&nbsp;" + data
+  }
+
+  function click_reaction(slug, codepoint) {
+    var token = document.getElementsByName('csrf-token')[0].content;
+    $.ajax({type: "POST",
+            url: "/i/" + slug + "/reaction/" + codepoint,
+            data: {"work":slug, "codepoint":codepoint},
+            headers: {"X-CSRF-Token" : token}
+          }).done(function(data) { reaction_callback(codepoint, data) });
+    return false;
+  }
