@@ -136,6 +136,12 @@ ExternalLink.create(
   index: 0,
   work: work,
 )
+ExternalLink.create(
+  name: "GitHub",
+  link: "https://github.com/yuinore/hatoqnet",
+  index: 1,
+  work: work,
+)
 work = Work.create(
          name: "魔法少女チノ",
          slug: "illust/magical",
@@ -299,6 +305,12 @@ ExternalLink.create(
   name: "Visit Website",
   link: "https://whiteless.works/",
   index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "GitHub",
+  link: "https://github.com/yuinore/whiteless_works",
+  index: 1,
   work: work,
 )
 work = Work.create(
@@ -640,6 +652,12 @@ ExternalLink.create(
   index: 0,
   work: work,
 )
+ExternalLink.create(
+  name: "Play BMS",
+  link: "https://bemuse.ninja/?server=https://yuinore.net/bms&song=Now%20in%20the%20Castle%20Age",
+  index: 1,
+  work: work,
+)
 work = Work.create(
          name: "にゃーんEP",
          slug: "cds/nyan",
@@ -831,6 +849,12 @@ ExternalLink.create(
   name: "Download",
   link: "http://yuinore.net/2017/02/smc-package/",
   index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "Play BMS",
+  link: "https://bemuse.ninja/?server=https://yuinore.net/bms&song=Strawberry%20Mint%20Chocolate",
+  index: 1,
   work: work,
 )
 work = Work.create(

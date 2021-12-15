@@ -9,21 +9,9 @@ class WorksController < ApplicationController
       raise ActionController::RoutingError.new('Not Found')
     end
 
-    youtube_link = work.external_links.detect do |external_link|
-      external_link.link.start_with?("https://www.youtube.com/")
-    end
-
-    if youtube_link
-      @youtube_embed_link = youtube_link.link.gsub("/watch?v=", "/embed/")
-    end
-
-    soundcloud_link = work.external_links.detect do |external_link|
-      external_link.link.start_with?("https://soundcloud.com/")
-    end
-
-    if soundcloud_link
-      @soundcloud_embed_link = soundcloud_link.link
-    end
+    @youtube_embed_link = youtube_embed_link(work)
+    @soundcloud_embed_link = soundcloud_embed_link(work)
+    @bemuse_embed_link = bemuse_embed_link(work)
 
     @twitter_card_title = work.name
     # @twitter_card_description = work.caption # デフォルト文言のままにしておく
@@ -59,4 +47,30 @@ class WorksController < ApplicationController
 
     render plain: "#{r.count}"
   end
+
+  private
+
+    def youtube_embed_link(work)
+      youtube_link = work.external_links.detect do |external_link|
+        external_link.link.start_with?("https://www.youtube.com/")
+      end
+
+      youtube_link&.link&.gsub("/watch?v=", "/embed/")
+    end
+
+    def soundcloud_embed_link(work)
+      soundcloud_link = work.external_links.detect do |external_link|
+        external_link.link.start_with?("https://soundcloud.com/")
+      end
+
+      soundcloud_link&.link
+    end
+
+    def bemuse_embed_link(work)
+      bemuse_link = work.external_links.detect do |external_link|
+        external_link.link.start_with?("https://bemuse.ninja/")
+      end
+
+      bemuse_link&.link
+    end
 end
