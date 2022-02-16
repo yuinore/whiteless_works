@@ -4,7 +4,7 @@ class CreateExternalLinks < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :link
       t.integer :index
-      t.references :work, null: false, foreign_key: true
+      t.references :work, null: false, foreign_key: true, type: :bigint
 
       t.timestamps
     end
