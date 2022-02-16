@@ -1,6 +1,6 @@
 class GalleryController < ApplicationController
   def index
     @title = "ギャラリー"
-    @works = Work.all
+    @works = Work.includes(:images).all
   end
 end
