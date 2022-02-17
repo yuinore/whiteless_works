@@ -89,8 +89,8 @@ namespace :seeder do
       end
 
       image.format = 'JPEG'
-      image.write("public/" + thumb_path) do
-        self.quality = 90
+      image.write("public/" + thumb_path) do |img|
+        img.quality = 90
       end
 
       if retina_postfix == ""
@@ -114,8 +114,8 @@ namespace :seeder do
     image.crop!(0, 0, 600, 314)
 
     image.format = 'JPEG'
-    image.write("public/" + card_path) do
-      self.quality = 90
+    image.write("public/" + card_path) do |img|
+      img.quality = 90
     end
   end
 end
