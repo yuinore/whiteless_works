@@ -88,9 +88,11 @@ namespace :seeder do
         image.resize_to_fit!(*([image_size] * 2))
       end
 
-      image.format = 'JPEG'
-      image.write("public/" + thumb_path) do |img|
-        img.quality = 90
+      unless File.exist?("public/" + thumb_path)
+        image.format = 'JPEG'
+        image.write("public/" + thumb_path) do |img|
+          img.quality = 90
+        end
       end
 
       if retina_postfix == ""
@@ -113,9 +115,11 @@ namespace :seeder do
 
     image.crop!(0, 0, 600, 314)
 
-    image.format = 'JPEG'
-    image.write("public/" + card_path) do |img|
-      img.quality = 90
+    unless File.exist?("public/" + card_path)
+      image.format = 'JPEG'
+      image.write("public/" + card_path) do |img|
+        img.quality = 90
+      end
     end
   end
 end
