@@ -2,6 +2,88 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "Mana HD",
+         slug: "movies/mana",
+         caption: "映像作品\n2022/1/30\nディレクション：yuinore\n3DCG：Konone Mimura\n楽曲：Mana / Yu^ta\n\nレンダリング協力：Sheep it Render Farm\n総レンダリング時間：132日4時間3分\nレンダラーの皆様（敬称略）： https://hackmd.io/@yuinore/SkLUyqmCK",
+       )
+Image.create(
+  name: "Mana HD_0",
+  index: 0,
+  path: "images/movie_008_mana_00.jpg",
+  thumb_path: "images/thumbs/movie_008_mana_00.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "Mana HD_1",
+  index: 1,
+  path: "images/movie_008_mana_01.jpg",
+  thumb_path: "images/thumbs/movie_008_mana_01.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "Mana HD_2",
+  index: 2,
+  path: "images/movie_008_mana_02.jpg",
+  thumb_path: "images/thumbs/movie_008_mana_02.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "Mana HD_3",
+  index: 3,
+  path: "images/movie_008_mana_03.jpg",
+  thumb_path: "images/thumbs/movie_008_mana_03.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "Mana HD_4",
+  index: 4,
+  path: "images/movie_008_mana_04.jpg",
+  thumb_path: "images/thumbs/movie_008_mana_04.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "YouTube",
+  link: "https://www.youtube.com/watch?v=olFZDX0PeBQ",
+  index: 0,
+  work: work,
+)
+work = Work.create(
+         name: "るーちゃん つかまえた！",
+         slug: "books/necro",
+         caption: "同人誌\n2022/1/22\nAuthor: hato\nGuest: からたに",
+       )
+Image.create(
+  name: "るーちゃん つかまえた！_0",
+  index: 0,
+  path: "images/books_016_necro.png",
+  thumb_path: "images/thumbs/books_016_necro.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1185919",
+  index: 0,
+  work: work,
+)
+work = Work.create(
          name: "チマメ隊もっとつかまえた！",
          slug: "books/trio2",
          caption: "同人誌\n2021/8/28\nAuthor: hato\nGuest: ゆーね, おむすび, もやなる\n制作時間: 322時間20分",
