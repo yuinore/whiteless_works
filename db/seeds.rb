@@ -2,6 +2,73 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "わたしのて",
+         slug: "movies/flyup",
+         caption: "映像作品\n2022/2/22\n\nTEAM\n感情的になる前にまずはレンダ\n\nディレクション\nゆいのあ\n\nイラスト\nにせねこ\n\n3DCG協力\nこんにチワワ\n\n楽曲\nFly up to : the Sky（Yu^ta feat. みずにんじん）\n\n出展\nFRENZ 2017\nM→Fes 2017",
+       )
+Image.create(
+  name: "わたしのて_0",
+  index: 0,
+  path: "images/movie_005_flyup_00.jpg",
+  thumb_path: "images/thumbs/movie_005_flyup_00.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "わたしのて_1",
+  index: 1,
+  path: "images/movie_005_flyup_01.jpg",
+  thumb_path: "images/thumbs/movie_005_flyup_01.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "わたしのて_2",
+  index: 2,
+  path: "images/movie_005_flyup_02.jpg",
+  thumb_path: "images/thumbs/movie_005_flyup_02.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "わたしのて_3",
+  index: 3,
+  path: "images/movie_005_flyup_03.jpg",
+  thumb_path: "images/thumbs/movie_005_flyup_03.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "わたしのて_4",
+  index: 4,
+  path: "images/movie_005_flyup_04.jpg",
+  thumb_path: "images/thumbs/movie_005_flyup_04.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "YouTube",
+  link: "https://www.youtube.com/watch?v=RAl73LFNGi4",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "Blog Post",
+  link: "https://yuinore.net/2022/03/released-flyup/",
+  index: 1,
+  work: work,
+)
+work = Work.create(
          name: "Mana HD",
          slug: "movies/mana",
          caption: "映像作品\n2022/1/30\nディレクション：yuinore\n3DCG：Konone Mimura\n楽曲：Mana / Yu^ta\n\nレンダリング協力：Sheep it Render Farm\n総レンダリング時間：132日4時間3分\nレンダラーの皆様（敬称略）： https://hackmd.io/@yuinore/SkLUyqmCK",
@@ -786,61 +853,6 @@ ExternalLink.create(
   name: "Visit Website",
   link: "http://wiki.mid2bms.net/",
   index: 0,
-  work: work,
-)
-work = Work.create(
-         name: "わたしのて",
-         slug: "movies/flyup",
-         caption: "映像作品\nComing soon...\nAuthor: yuinore, にせねこ, こんにチワワ, Yu^ta, mizninjin",
-       )
-Image.create(
-  name: "わたしのて_0",
-  index: 0,
-  path: "images/movie_005_flyup_00.jpg",
-  thumb_path: "images/thumbs/movie_005_flyup_00.jpg",
-  thumb_width: 400,
-  thumb_height: 225,
-  link: nil,
-  work: work,
-)
-Image.create(
-  name: "わたしのて_1",
-  index: 1,
-  path: "images/movie_005_flyup_01.jpg",
-  thumb_path: "images/thumbs/movie_005_flyup_01.jpg",
-  thumb_width: 160,
-  thumb_height: 90,
-  link: nil,
-  work: work,
-)
-Image.create(
-  name: "わたしのて_2",
-  index: 2,
-  path: "images/movie_005_flyup_02.jpg",
-  thumb_path: "images/thumbs/movie_005_flyup_02.jpg",
-  thumb_width: 160,
-  thumb_height: 90,
-  link: nil,
-  work: work,
-)
-Image.create(
-  name: "わたしのて_3",
-  index: 3,
-  path: "images/movie_005_flyup_03.jpg",
-  thumb_path: "images/thumbs/movie_005_flyup_03.jpg",
-  thumb_width: 160,
-  thumb_height: 90,
-  link: nil,
-  work: work,
-)
-Image.create(
-  name: "わたしのて_4",
-  index: 4,
-  path: "images/movie_005_flyup_04.jpg",
-  thumb_path: "images/thumbs/movie_005_flyup_04.jpg",
-  thumb_width: 160,
-  thumb_height: 90,
-  link: nil,
   work: work,
 )
 work = Work.create(
