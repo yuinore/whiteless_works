@@ -2,6 +2,33 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "Twinkle Space Traveler",
+         slug: "cds/twinkle",
+         caption: "音楽CD\n2022/4/24\nAuthor: Yu^ta, hato, yuinore",
+       )
+Image.create(
+  name: "Twinkle Space Traveler_0",
+  index: 0,
+  path: "images/cd_004_twinkle.png",
+  thumb_path: "images/thumbs/cd_004_twinkle.jpg",
+  thumb_width: 400,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/3819084",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "Crossfade",
+  link: "https://soundcloud.com/strawberry-mint-chocolate/twinkle-space-travelercrossfade",
+  index: 1,
+  work: work,
+)
+work = Work.create(
          name: "わたしのて",
          slug: "movies/flyup",
          caption: "映像作品\n2022/2/22\n\nTEAM\n感情的になる前にまずはレンダ\n\nディレクション\nゆいのあ\n\nイラスト\nにせねこ\n\n3DCG協力\nこんにチワワ\n\n楽曲\nFly up to : the Sky（Yu^ta feat. みずにんじん）\n\n出展\nFRENZ 2017\nM→Fes 2017",
