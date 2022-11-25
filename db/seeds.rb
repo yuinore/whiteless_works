@@ -2,6 +2,96 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "Special present for you",
+         slug: "illust/kuro2022",
+         caption: "イラスト\n2022/10/12\nAuthor: hato",
+       )
+Image.create(
+  name: "Special present for you_0",
+  index: 0,
+  path: "images/illust_2022_kuro2022.png",
+  thumb_path: "images/thumbs/illust_2022_kuro2022.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "pixiv",
+  link: "https://www.pixiv.net/artworks/101883424",
+  index: 0,
+  work: work,
+)
+work = Work.create(
+         name: "うさぎえっちイラスト本 petit",
+         slug: "books/usapic2",
+         caption: "同人誌\n2022/8/14\nAuthor: hato",
+       )
+Image.create(
+  name: "うさぎえっちイラスト本 petit_0",
+  index: 0,
+  path: "images/books_018_usapic2.png",
+  thumb_path: "images/thumbs/books_018_usapic2.jpg",
+  thumb_width: 282,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/4077109",
+  index: 0,
+  work: work,
+)
+work = Work.create(
+         name: "チマメ隊えっち合同",
+         slug: "books/trio3",
+         caption: "同人誌\n2022/8/14\nOrganizer: hato\n制作時間: 259時間16分（原稿作業のみ）",
+       )
+Image.create(
+  name: "チマメ隊えっち合同_0",
+  index: 0,
+  path: "images/books_017_trio3.png",
+  thumb_path: "images/thumbs/books_017_trio3.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/4077109",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1528854",
+  index: 1,
+  work: work,
+)
+work = Work.create(
+         name: "yutabms.net",
+         slug: "websites/yutabms-net",
+         caption: "Website\n2022/4/28\nReact",
+       )
+Image.create(
+  name: "yutabms.net_0",
+  index: 0,
+  path: "images/website_yutabms_net.png",
+  thumb_path: "images/thumbs/website_yutabms_net.jpg",
+  thumb_width: 400,
+  thumb_height: 264,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "Visit Website",
+  link: "https://yutabms.net/",
+  index: 0,
+  work: work,
+)
+work = Work.create(
          name: "Twinkle Space Traveler",
          slug: "cds/twinkle",
          caption: "音楽CD\n2022/4/24\nAuthor: Yu^ta, hato, yuinore",
@@ -159,7 +249,7 @@ ExternalLink.create(
 work = Work.create(
          name: "るーちゃん つかまえた！",
          slug: "books/necro",
-         caption: "同人誌\n2022/1/22\nAuthor: hato\nGuest: からたに",
+         caption: "同人誌\n2022/1/22\nAuthor: hato\nGuest: からたに\n制作時間: 76時間46分",
        )
 Image.create(
   name: "るーちゃん つかまえた！_0",
@@ -172,9 +262,21 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/4077094",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
   name: "メロンブックス",
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1185919",
-  index: 0,
+  index: 1,
+  work: work,
+)
+ExternalLink.create(
+  name: "とらのあな",
+  link: "https://ec.toranoana.jp/tora_r/ec/item/040031006221",
+  index: 2,
   work: work,
 )
 work = Work.create(
@@ -208,6 +310,12 @@ ExternalLink.create(
   name: "とらのあな",
   link: "https://ec.toranoana.jp/tora_r/ec/item/040030929827",
   index: 2,
+  work: work,
+)
+ExternalLink.create(
+  name: "DLsite",
+  link: "https://dlsite.jp/mawot/RJ420503/",
+  index: 3,
   work: work,
 )
 work = Work.create(
@@ -321,7 +429,7 @@ ExternalLink.create(
 work = Work.create(
          name: "魔法少女チノ",
          slug: "illust/magical",
-         caption: "イラスト\n2020/12/4\r\nAuthor: hato\n制作時間: 30時間21分",
+         caption: "イラスト\n2020/12/4\nAuthor: hato\n制作時間: 30時間21分",
        )
 Image.create(
   name: "魔法少女チノ_0",
