@@ -2,6 +2,48 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "アクリルキーホルダーの重心を表示するやつ",
+         slug: "websites/keychain",
+         caption: "Website\n2023/1/17\nPHP + MySQL + Bulma",
+       )
+Image.create(
+  name: "アクリルキーホルダーの重心を表示するやつ_0",
+  index: 0,
+  path: "images/website_keychain.png",
+  thumb_path: "images/thumbs/website_keychain.jpg",
+  thumb_width: 400,
+  thumb_height: 251,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "Visit Website",
+  link: "https://key.yuinore.net/",
+  index: 0,
+  work: work,
+)
+work = Work.create(
+         name: "ゆるいきらファン合同",
+         slug: "books/krfgd",
+         caption: "同人誌\n2022/12/31\r\nOrganizer: hato",
+       )
+Image.create(
+  name: "ゆるいきらファン合同_0",
+  index: 0,
+  path: "images/books_019_krfgd.png",
+  thumb_path: "images/thumbs/books_019_krfgd.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1726887",
+  index: 0,
+  work: work,
+)
+work = Work.create(
          name: "Special present for you",
          slug: "illust/kuro2022",
          caption: "イラスト\n2022/10/12\nAuthor: hato",
@@ -89,6 +131,12 @@ ExternalLink.create(
   name: "Visit Website",
   link: "https://yutabms.net/",
   index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "GitHub",
+  link: "https://github.com/yuinore/yutabmsnet",
+  index: 1,
   work: work,
 )
 work = Work.create(
@@ -1041,7 +1089,7 @@ ExternalLink.create(
 work = Work.create(
          name: "鮭トドン",
          slug: "websites/sktdn",
-         caption: "Website\n2017/5/11\nPHP + MySql2 + Bootstrap (no framework)",
+         caption: "Website\n2017/5/11\nPHP + MySQL + Bootstrap",
        )
 Image.create(
   name: "鮭トドン_0",
