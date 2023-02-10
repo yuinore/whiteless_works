@@ -4,7 +4,7 @@ ExternalLink.destroy_all
 work = Work.create(
          name: "アクリルキーホルダーの重心を表示するやつ",
          slug: "websites/keychain",
-         caption: "Website\n2023/1/17\nPHP + MySQL + Bulma",
+         caption: "Website\n2023/1/17\nPython + PHP + Bulma",
        )
 Image.create(
   name: "アクリルキーホルダーの重心を表示するやつ_0",
@@ -1530,5 +1530,56 @@ ExternalLink.create(
   name: "GitHub",
   link: "https://github.com/yuinore/Mid2BMS",
   index: 1,
+  work: work,
+)
+work = Work.create(
+         name: "くろ (2012夏)",
+         slug: "illust/kuro",
+         caption: "イラスト\n2012/9/13\nAuthor: hato",
+       )
+Image.create(
+  name: "くろ (2012夏)_0",
+  index: 0,
+  path: "images/illust_2012_kuro.png",
+  thumb_path: "images/thumbs/illust_2012_kuro.jpg",
+  thumb_width: 200,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+work = Work.create(
+         name: "かわいいインスト曲集",
+         slug: "cds/kawaii-inst",
+         caption: "音楽CD\n2012/5/5 (COMITIA100)\nAuthor: Yu^ta",
+       )
+Image.create(
+  name: "かわいいインスト曲集_0",
+  index: 0,
+  path: "images/cd_000_kawaii.png",
+  thumb_path: "images/thumbs/cd_000_kawaii.jpg",
+  thumb_width: 400,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/4533710",
+  index: 0,
+  work: work,
+)
+work = Work.create(
+         name: "2011 Winter",
+         slug: "illust/2011winter",
+         caption: "イラスト\n2011/12/31\nAuthor: hato",
+       )
+Image.create(
+  name: "2011 Winter_0",
+  index: 0,
+  path: "images/illust_2011_winter.png",
+  thumb_path: "images/thumbs/illust_2011_winter.jpg",
+  thumb_width: 400,
+  thumb_height: 277,
+  link: nil,
   work: work,
 )
