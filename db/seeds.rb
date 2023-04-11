@@ -2,6 +2,67 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "みんヨミ！ ～みんなの読み方教えてよ！～",
+         slug: "websites/minyomi",
+         caption: "Website\n2023/3/30\nRuby on Rails",
+       )
+Image.create(
+  name: "みんヨミ！ ～みんなの読み方教えてよ！～_0",
+  index: 0,
+  path: "images/website_minyomi_00.png",
+  thumb_path: "images/thumbs/website_minyomi_00.jpg",
+  thumb_width: 400,
+  thumb_height: 301,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "みんヨミ！ ～みんなの読み方教えてよ！～_1",
+  index: 1,
+  path: "images/website_minyomi_01.png",
+  thumb_path: "images/thumbs/website_minyomi_01.jpg",
+  thumb_width: 160,
+  thumb_height: 120,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "みんヨミ！ ～みんなの読み方教えてよ！～_2",
+  index: 2,
+  path: "images/website_minyomi_02.png",
+  thumb_path: "images/thumbs/website_minyomi_02.jpg",
+  thumb_width: 160,
+  thumb_height: 120,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "みんヨミ！ ～みんなの読み方教えてよ！～_3",
+  index: 3,
+  path: "images/website_minyomi_03.png",
+  thumb_path: "images/thumbs/website_minyomi_03.jpg",
+  thumb_width: 160,
+  thumb_height: 120,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "みんヨミ！ ～みんなの読み方教えてよ！～_4",
+  index: 4,
+  path: "images/website_minyomi_04.png",
+  thumb_path: "images/thumbs/website_minyomi_04.jpg",
+  thumb_width: 93,
+  thumb_height: 160,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "Visit Website",
+  link: "https://minyomi.org/",
+  index: 0,
+  work: work,
+)
+work = Work.create(
          name: "アクリルキーホルダーの重心を表示するやつ",
          slug: "websites/keychain",
          caption: "Website\n2023/1/17\nPython + PHP + Bulma",
@@ -18,7 +79,7 @@ Image.create(
 )
 ExternalLink.create(
   name: "Visit Website",
-  link: "https://key.yuinore.net/",
+  link: "https://ackeytools.net/",
   index: 0,
   work: work,
 )
