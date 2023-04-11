@@ -51,3 +51,4 @@ gem 'html2slim'
 #   $ sudo yum -y install ImageMagick ImageMagick-devel
 gem 'carrierwave'
 gem 'rmagick'
+gem 'dotenv-rails'
