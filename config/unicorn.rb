@@ -32,24 +32,3 @@ end
 after_fork do |server, worker|
   defined?(ActiveRecord::Base) and ActiveRecord::Base.establish_connection
 end
-
-# フォークが行われる前の処理
-before_fork do |server, worker|
-  defined?(ActiveRecord::Base) and ActiveRecord::Base.connection.disconnect!
-end
-
-# フォークが行われた後の処理
-after_fork do |server, worker|
-  defined?(ActiveRecord::Base) and ActiveRecord::Base.establish_connection
-end
-
-# フォークが行われる前の処理
-before_fork do |server, worker|
-  old_pid = "#{server.config[:pid]}.oldbin"
-  if old_pid != server.pid
-    begin
-      Process.kill "QUIT", File.read(old_pid).to_i
-    rescue Errno::ENOENT, Errno::ESRCH
-    end
-  end
-end
