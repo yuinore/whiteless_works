@@ -2,9 +2,30 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "現実をカットアップしてみた",
+         slug: "cds/cutup",
+         caption: "音楽CD\n2023/4/30\nAuthor: Yu^ta, mizninjin, hato, yuinore",
+       )
+Image.create(
+  name: "現実をカットアップしてみた_0",
+  index: 0,
+  path: "images/cds_005_cutup.png",
+  thumb_path: "images/thumbs/cds_005_cutup.jpg",
+  thumb_width: 400,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/4718397",
+  index: 0,
+  work: work,
+)
+work = Work.create(
          name: "みんヨミ！ ～みんなの読み方教えてよ！～",
          slug: "websites/minyomi",
-         caption: "Website\n2023/3/30\nRuby on Rails",
+         caption: "Website\n2023/3/30\nRuby on Rails\n制作期間：53日（デザイン含む）",
        )
 Image.create(
   name: "みんヨミ！ ～みんなの読み方教えてよ！～_0",
@@ -60,6 +81,12 @@ ExternalLink.create(
   name: "Visit Website",
   link: "https://minyomi.org/",
   index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "GitHub",
+  link: "https://github.com/yuinore/minyomi",
+  index: 1,
   work: work,
 )
 work = Work.create(
