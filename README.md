@@ -63,6 +63,16 @@ $ bundle exec rails db:seed
 $ bundle exec rails server
 ```
 
+## Update seeds
+
+Place images to `public/images/`.
+
+```
+$ ls seeds.csv
+$ ls public/images/*.png
+$ bundle exec rake seeder:seed
+```
+
 ## Notes
 
 Ruby 3.4.4 を rbenv でインストールするには `libffi-dev` と `libyaml-dev` が追加で必要っぽい。

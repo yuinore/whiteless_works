@@ -1,4 +1,5 @@
 require 'rmagick'
+require 'csv'
 
 namespace :seeder do
   desc "db/seed.rb を更新します"
@@ -9,9 +10,19 @@ namespace :seeder do
 
   desc "db/seed.rb を更新します"
   task :run do
-    url = "https://script.google.com/macros/s/AKfycbxi2V2ZeVwl2Icq13W2lu_yifd0MTKdSJX0VamK4qvECkdI8Tc/exec"
-    json = `curl -L -s "#{url}"`
-    obj = JSON.parse json, symbolize_names: true
+    csv_path = "seeds.csv"
+
+    # read csv file
+    unless File.exist?(csv_path)
+      abort "Fatal Error: InputCSV file not found! filename=\"#{csv_path}\""
+    end
+
+    csv_content = File.read(csv_path)
+
+    # convert CSV to object
+    # NOTE: names must be symbolized, as same as `JSON.parse json, symbolize_names: true`
+    obj = CSV.parse(csv_content, headers: true).map { |row| row.to_h.symbolize_keys }
+
     str = []
 
     str << "Work.destroy_all"
@@ -29,7 +40,7 @@ namespace :seeder do
       str << "         caption: #{(work[:category] + "\n" + work[:caption]).inspect},"
       str << "       )"
 
-      work[:images].each_line.map(&:chomp).each_with_index { |image_filename, i|
+      (work[:images] || "").each_line.map(&:chomp).each_with_index { |image_filename, i|
         thumb_path,
         thumb_width,
         thumb_height = generate_thumbnail("images/" + image_filename,
@@ -52,8 +63,14 @@ namespace :seeder do
         str << ")"
       }
 
-      work[:external_links].each_line.map(&:chomp).each_with_index { |link_info, i|
+      (work[:external_links] || "").each_line.map(&:chomp).each_with_index { |link_info, i|
         name, link = link_info.split(",")
+
+        # if name starts with "//", ignore it
+        if name.start_with?("//")
+          next
+        end
+
         str << "ExternalLink.create("
         str << "  name: #{name.inspect},"
         str << "  link: #{link.inspect},"
@@ -76,6 +93,11 @@ namespace :seeder do
   def generate_thumbnail(filename, base_image_size)
     puts "resize image: #{filename}"
     ret = nil
+
+    # check if the original image exists
+    if !File.exist?("public/" + filename)
+      abort "Fatal Error: Input image not found! filename=\"#{filename}\""
+    end
 
     # サムネイル生成
     [[base_image_size, ""], [base_image_size * 2, "@2x"]].each do |image_size, retina_postfix|
