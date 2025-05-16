@@ -2,6 +2,118 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "Funny Fancy Fantasia",
+         slug: "cds/fff",
+         caption: "音楽CD\n2025/4/27 (M3-2025春)\nAuthor: Yu^ta, mizninjin, hato, yuinore",
+       )
+Image.create(
+  name: "Funny Fancy Fantasia_0",
+  index: 0,
+  path: "images/cds_006_fff.png",
+  thumb_path: "images/thumbs/cds_006_fff.jpg",
+  thumb_width: 400,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "Funny Fancy Fantasia_1",
+  index: 1,
+  path: "images/cds_006_fff_sticker.png",
+  thumb_path: "images/thumbs/cds_006_fff_sticker.jpg",
+  thumb_width: 160,
+  thumb_height: 114,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/6925860",
+  index: 0,
+  work: work,
+)
+work = Work.create(
+         name: "チマメ隊またまたつかまえた！",
+         slug: "books/trio4",
+         caption: "同人誌\n2024/12/30\nAuthor: hato\nGuest: そらみる, しろもの, ねこみかーる\n制作時間: 384時間19分",
+       )
+Image.create(
+  name: "チマメ隊またまたつかまえた！_0",
+  index: 0,
+  path: "images/books_022_trio4.png",
+  thumb_path: "images/thumbs/books_022_trio4.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/6451340",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=2679220",
+  index: 1,
+  work: work,
+)
+work = Work.create(
+         name: "火花騎士クレー つかまえた！",
+         slug: "books/clover",
+         caption: "同人誌\n2024/8/12\nAuthor: hato\n制作時間: 88時間40分",
+       )
+Image.create(
+  name: "火花騎士クレー つかまえた！_0",
+  index: 0,
+  path: "images/books_021_clover.png",
+  thumb_path: "images/thumbs/books_021_clover.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/6451326",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=2488813",
+  index: 1,
+  work: work,
+)
+work = Work.create(
+         name: "チマメ隊つるぺた合同",
+         slug: "books/trio5",
+         caption: "同人誌\n2023/12/31\nOrganizer: hato\n制作時間: 157時間29分（編集作業除く）",
+       )
+Image.create(
+  name: "チマメ隊つるぺた合同_0",
+  index: 0,
+  path: "images/books_020_trio5.png",
+  thumb_path: "images/thumbs/books_020_trio5.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/5393060",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=2147188",
+  index: 1,
+  work: work,
+)
+work = Work.create(
          name: "現実をカットアップしてみた",
          slug: "cds/cutup",
          caption: "音楽CD\n2023/4/30\nAuthor: Yu^ta, mizninjin, hato, yuinore",
@@ -126,9 +238,15 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
+  name: "BOOTH",
+  link: "https://hatoqne.booth.pm/items/5008698",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
   name: "メロンブックス",
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=1726887",
-  index: 0,
+  index: 1,
   work: work,
 )
 work = Work.create(
@@ -173,10 +291,16 @@ ExternalLink.create(
   index: 0,
   work: work,
 )
+ExternalLink.create(
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=2262244",
+  index: 1,
+  work: work,
+)
 work = Work.create(
          name: "チマメ隊えっち合同",
          slug: "books/trio3",
-         caption: "同人誌\n2022/8/14\nOrganizer: hato\n制作時間: 259時間16分（原稿作業のみ）",
+         caption: "同人誌\n2022/8/14\nOrganizer: hato\n制作時間: 259時間16分（編集作業除く）",
        )
 Image.create(
   name: "チマメ隊えっち合同_0",
@@ -668,12 +792,6 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "BOOTH",
-  link: "https://hatoqne.booth.pm/items/1965787",
-  index: 0,
-  work: work,
-)
-ExternalLink.create(
   name: "メロンブックス",
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=651820",
   index: 1,
@@ -749,12 +867,6 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "BOOTH",
-  link: "https://hatoqne.booth.pm/items/1779269",
-  index: 0,
-  work: work,
-)
-ExternalLink.create(
   name: "メロンブックス",
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=608381",
   index: 1,
@@ -818,12 +930,6 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "BOOTH",
-  link: "https://hatoqne.booth.pm/items/1515262",
-  index: 0,
-  work: work,
-)
-ExternalLink.create(
   name: "メロンブックス",
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=525762",
   index: 1,
@@ -868,12 +974,6 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "BOOTH",
-  link: "https://hatoqne.booth.pm/items/1425005",
-  index: 0,
-  work: work,
-)
-ExternalLink.create(
   name: "メロンブックス",
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=518439",
   index: 1,
@@ -898,12 +998,6 @@ Image.create(
   thumb_width: 283,
   thumb_height: 400,
   link: nil,
-  work: work,
-)
-ExternalLink.create(
-  name: "BOOTH",
-  link: "https://hatoqne.booth.pm/items/1344333",
-  index: 0,
   work: work,
 )
 ExternalLink.create(
@@ -934,12 +1028,6 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "BOOTH",
-  link: "https://hatoqne.booth.pm/items/1344308",
-  index: 0,
-  work: work,
-)
-ExternalLink.create(
   name: "メロンブックス",
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=505093",
   index: 1,
@@ -967,15 +1055,15 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "BOOTH",
-  link: "https://hatoqne.booth.pm/items/1172743",
-  index: 0,
+  name: "メロンブックス",
+  link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=472111",
+  index: 1,
   work: work,
 )
 ExternalLink.create(
   name: "DLsite",
   link: "https://www.dlsite.com/maniax/work/=/product_id/RJ243742.html",
-  index: 1,
+  index: 2,
   work: work,
 )
 work = Work.create(
@@ -991,12 +1079,6 @@ Image.create(
   thumb_width: 283,
   thumb_height: 400,
   link: nil,
-  work: work,
-)
-ExternalLink.create(
-  name: "BOOTH",
-  link: "https://hatoqne.booth.pm/items/1173619",
-  index: 0,
   work: work,
 )
 ExternalLink.create(
@@ -1223,6 +1305,63 @@ ExternalLink.create(
   work: work,
 )
 work = Work.create(
+         name: "wa:k around the wor:d MV",
+         slug: "movies/nekomimi",
+         caption: "映像作品\n2017/2/14\nAuthor: yuinore, Yu^ta",
+       )
+Image.create(
+  name: "wa:k around the wor:d MV_0",
+  index: 0,
+  path: "images/movie_009_nekomimi_00.png",
+  thumb_path: "images/thumbs/movie_009_nekomimi_00.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "wa:k around the wor:d MV_1",
+  index: 1,
+  path: "images/movie_009_nekomimi_01.png",
+  thumb_path: "images/thumbs/movie_009_nekomimi_01.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "wa:k around the wor:d MV_2",
+  index: 2,
+  path: "images/movie_009_nekomimi_02.png",
+  thumb_path: "images/thumbs/movie_009_nekomimi_02.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "wa:k around the wor:d MV_3",
+  index: 3,
+  path: "images/movie_009_nekomimi_03.png",
+  thumb_path: "images/thumbs/movie_009_nekomimi_03.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "ニコニコ動画",
+  link: "https://www.nicovideo.jp/watch/sm30609520",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "YouTube",
+  link: "https://youtu.be/QtbDKZWrUgY",
+  index: 1,
+  work: work,
+)
+work = Work.create(
          name: "いちご みんと ちょこれーと",
          slug: "movies/smc",
          caption: "映像作品\n2017/2/14\nFRENZ 2014 出展作品\nAuthor: yuinore, こんにチワワ, Yu^ta, mizninjin\nGuest: バリキオス, ちゃば, 守鈴, Azel",
@@ -1430,7 +1569,7 @@ Image.create(
 work = Work.create(
          name: "Strawberry Mint Chocolate",
          slug: "cds/smc",
-         caption: "音楽CD\n2015/10/25 (M3 2015秋)\nAuthor: Yu^ta, mizninjin, yuinore",
+         caption: "音楽CD\n2015/10/25 (M3-2015秋)\nAuthor: Yu^ta, mizninjin, yuinore",
        )
 Image.create(
   name: "Strawberry Mint Chocolate_0",
