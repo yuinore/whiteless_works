@@ -73,6 +73,7 @@ yarn-debug.log*
 
 /public/packs
 /public/packs-test
+/public/images
 /node_modules
 /yarn-error.log
 yarn-debug.log*
