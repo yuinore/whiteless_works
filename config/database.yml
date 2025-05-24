@@ -16,6 +16,8 @@ default: &default
   username: root
   password: "<%= ENV['WHITELESS_WORKS_DATABASE_PASSWORD'] %>"
   host: localhost
+  # # you may explicitly set the authentication method
+  # authentication_plugin: caching_sha2_password
 
 development:
   <<: *default

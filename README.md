@@ -73,7 +73,7 @@ $ ls public/images/*.png
 $ bundle exec rake seeder:seed
 ```
 
-## Notes
+## Note 1: Ruby 3.4.4 のインストール
 
 Ruby 3.4.4 を rbenv でインストールするには `libffi-dev` と `libyaml-dev` が追加で必要っぽい。
 
@@ -106,4 +106,32 @@ checked program was:
 /* end */
 
 --------------------
+```
+
+## Note 2: MySQL に root パスワードを設定する方法
+
+まず、パスワード無しで MySQL にログインし、
+
+```bash
+sudo mysql -u root
+```
+
+その後、パスワードを設定してください。今回は `caching_sha2_password` を指定しています。
+
+```sql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'your_new_password';
+FLUSH PRIVILEGES;
+```
+
+パスワードを設定したら、 .env ファイルを更新してください。
+
+```bash
+cp -i .env{.sample,}
+vim .env
+```
+
+.env ファイルには以下のように記述してください：
+
+```bash
+export WHITELESS_WORKS_DATABASE_PASSWORD=your_new_password
 ```
