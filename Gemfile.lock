@@ -259,10 +259,10 @@ GEM
       actionpack (>= 3.1)
       railties (>= 3.1)
       slim (>= 3.0, < 6.0, != 5.0.0)
-    spring (2.1.1)
-    spring-watcher-listen (2.0.1)
+    spring (4.3.0)
+    spring-watcher-listen (2.1.0)
       listen (>= 2.7, < 4.0)
-      spring (>= 1.2, < 3.0)
+      spring (>= 4)
     sprockets (4.2.2)
       concurrent-ruby (~> 1.0)
       logger
@@ -324,8 +324,8 @@ DEPENDENCIES
   rmagick
   sass-rails (>= 6)
   slim-rails
-  spring
-  spring-watcher-listen (~> 2.0.0)
+  spring (~> 4.0)
+  spring-watcher-listen (~> 2.1)
   stringio (~> 3.1.7)
   tzinfo-data
   web-console (~> 4.2.1)
