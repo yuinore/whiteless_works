@@ -315,21 +315,21 @@ DEPENDENCIES
   csv
   dotenv-rails
   html2slim
-  jbuilder (~> 2.7)
+  jbuilder (~> 2.13.0)
   listen (~> 3.5)
   mutex_m
-  mysql2 (>= 0.5.0)
-  puma (~> 6.4)
+  mysql2 (~> 0.5.6)
+  puma (~> 6.6.0)
   rails (~> 8.0.2)
   rmagick
-  sass-rails (>= 6)
+  sass-rails (~> 6.0.0)
   slim-rails
   spring (~> 4.0)
   spring-watcher-listen (~> 2.1)
   stringio (~> 3.1.7)
   tzinfo-data
   web-console (~> 4.2.1)
-  webpacker (>= 4.0)
+  webpacker (~> 5.4.4)
   webrick
 
 RUBY VERSION
