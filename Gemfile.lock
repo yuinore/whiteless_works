@@ -127,6 +127,7 @@ GEM
     jbuilder (2.13.0)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    kgio (2.11.4)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -225,6 +226,7 @@ GEM
       rake (>= 12.2)
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
+    raindrops (0.20.1)
     rake (13.2.1)
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
@@ -279,6 +281,9 @@ GEM
     timeout (0.4.3)
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
+    unicorn (6.1.0)
+      kgio (~> 2.6)
+      raindrops (~> 0.7)
     uri (1.0.3)
     useragent (0.16.11)
     web-console (4.2.1)
@@ -328,6 +333,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.1)
   stringio (~> 3.1.7)
   tzinfo-data
+  unicorn
   web-console (~> 4.2.1)
   webpacker (~> 5.4.4)
   webrick

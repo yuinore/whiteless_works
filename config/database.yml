@@ -52,5 +52,5 @@ test:
 production:
   <<: *default
   database: whiteless_works_production
-  username: whiteless_works
+  username: root
   password: "<%= ENV['WHITELESS_WORKS_DATABASE_PASSWORD'] %>"
