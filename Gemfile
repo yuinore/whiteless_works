@@ -32,6 +32,8 @@ gem 'mutex_m'
 gem 'webrick'
 # Fix stringio version conflict
 gem 'stringio', '~> 3.1.7'
+# Required for Ruby 3.4.0 compatibility
+gem 'csv'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
