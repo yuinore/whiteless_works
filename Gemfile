@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.3.8'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 7.2.2', '>= 7.2.2.1'
+gem 'rails', '~> 8.0.2'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.5.0'
 # Use Puma as the app server
@@ -30,6 +30,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'mutex_m'
 # Required for Ruby 3.0.0 compatibility
 gem 'webrick'
+# Fix stringio version conflict
+gem 'stringio', '~> 3.1.7'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
