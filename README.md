@@ -135,3 +135,11 @@ vim .env
 ```bash
 export WHITELESS_WORKS_DATABASE_PASSWORD=your_new_password
 ```
+
+## Note 3: 初回デプロイ時
+
+初回デプロイ時は master.key 及び config/credentials.yml.enc を作成してください。
+
+```
+EDITOR=vim bundle exec rails credentials:edit
+```
