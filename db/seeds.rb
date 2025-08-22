@@ -2,6 +2,53 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "#nemusugi",
+         slug: "websites/nemusugi",
+         caption: "Website\n2025/8/21\nReact\n制作時間: 12時間21分（デザイン含む）",
+       )
+Image.create(
+  name: "#nemusugi_0",
+  index: 0,
+  path: "images/website_nemusugi_00.png",
+  thumb_path: "images/thumbs/website_nemusugi_00.jpg",
+  thumb_width: 400,
+  thumb_height: 242,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "#nemusugi_1",
+  index: 1,
+  path: "images/website_nemusugi_01.png",
+  thumb_path: "images/thumbs/website_nemusugi_01.jpg",
+  thumb_width: 160,
+  thumb_height: 97,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "#nemusugi_2",
+  index: 2,
+  path: "images/website_nemusugi_02.png",
+  thumb_path: "images/thumbs/website_nemusugi_02.jpg",
+  thumb_width: 74,
+  thumb_height: 160,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "Official Website",
+  link: "https://nemusugi.jp/",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "GitHub",
+  link: "https://github.com/yuinore/nemusugi",
+  index: 1,
+  work: work,
+)
+work = Work.create(
          name: "Funny Fancy Fantasia",
          slug: "cds/fff",
          caption: "音楽CD\n2025/4/27 (M3-2025春)\nAuthor: Yu^ta, mizninjin, hato, yuinore",
@@ -137,7 +184,7 @@ ExternalLink.create(
 work = Work.create(
          name: "みんヨミ！ ～みんなの読み方教えてよ！～",
          slug: "websites/minyomi",
-         caption: "Website\n2023/3/30\nRuby on Rails\n制作期間：53日（デザイン含む）",
+         caption: "Website\n2023/3/30\nRuby on Rails\n制作期間: 53日（デザイン含む）",
        )
 Image.create(
   name: "みんヨミ！ ～みんなの読み方教えてよ！～_0",
@@ -1458,7 +1505,7 @@ ExternalLink.create(
 work = Work.create(
          name: "Sunny",
          slug: "movies/sunny",
-         caption: "映像作品\n2016/09/24\nAuthor: yuinore, Yu^ta",
+         caption: "映像作品\n2016/9/24\nAuthor: yuinore, Yu^ta",
        )
 Image.create(
   name: "Sunny_0",
@@ -1602,7 +1649,7 @@ ExternalLink.create(
 work = Work.create(
          name: "Busy Factory",
          slug: "movies/busyfactory",
-         caption: "映像作品\n2015/10/03\nAuthor: yuinore, こんにチワワ, Yu^ta",
+         caption: "映像作品\n2015/10/3\nAuthor: yuinore, こんにチワワ, Yu^ta",
        )
 Image.create(
   name: "Busy Factory_0",
@@ -1708,7 +1755,7 @@ ExternalLink.create(
 work = Work.create(
          name: "現実をカットアップしてみた",
          slug: "movies/cutup",
-         caption: "映像作品\n2014/09/07\nAuthor: yuinore, Yu^ta\n",
+         caption: "映像作品\n2014/9/7\nAuthor: yuinore, Yu^ta\n",
        )
 Image.create(
   name: "現実をカットアップしてみた_0",

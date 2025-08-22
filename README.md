@@ -143,3 +143,13 @@ export WHITELESS_WORKS_DATABASE_PASSWORD=your_new_password
 ```
 EDITOR=vim bundle exec rails credentials:edit
 ```
+
+## License & Contributing
+
+**Important**: This repository contains seed values related to creative content and visual artworks that are currently unlicensed. Therefore, I cannot accept pull requests at this time.
+
+If you're interested in contributing or have suggestions, please contact me directly to discuss possibilities.
+
+## Contact
+
+https://x.com/yuinore
