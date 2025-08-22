@@ -37,7 +37,7 @@ Image.create(
   work: work,
 )
 ExternalLink.create(
-  name: "Official Website",
+  name: "Visit Website",
   link: "https://nemusugi.jp/",
   index: 0,
   work: work,

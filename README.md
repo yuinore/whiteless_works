@@ -73,6 +73,26 @@ $ ls public/images/*.png
 $ bundle exec rake seeder:seed
 ```
 
+## Deploy images to server
+
+To deploy image files to the server, use rsync command:
+
+```bash
+# Direct transfer to server
+rsync -avz --progress public/images/ [SSH_CONFIG_NAME]:/path/to/server/images/
+
+# Example (replace with your actual SSH config name and server path)
+rsync -avz --progress public/images/ your-server:/var/www/whiteless_works/public/images/
+```
+
+**Note**:
+- Replace `[SSH_CONFIG_NAME]` with your SSH configuration name
+- Replace `/path/to/server/images/` with the actual server path
+- Ensure you have write permissions to the target directory on the server
+- The `-a` flag preserves permissions, timestamps, and directory structure
+- The `-z` flag compresses data during transfer
+- The `--progress` flag shows transfer progress
+
 ## Note 1: Ruby 3.4.4 のインストール
 
 Ruby 3.4.4 を rbenv でインストールするには `libffi-dev` と `libyaml-dev` が追加で必要っぽい。
