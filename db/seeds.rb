@@ -2,9 +2,70 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "幸せの青い鳥",
+         slug: "movies/bird",
+         caption: "映像作品\n2025/10/12\n\n制作 : ねむい #合理的思考の皆伝\n\n企画 : ゆいのあ\n原画 : hato\n3DCG 協力 : Konone Mimura\n\nメインテーマ「The Blue Bird」\n編曲 : Yu^ta\n歌 : みずにんじん\n\n出展 : FRENZ 2025\n\n制作時間 : 411 時間 27 分\n制作期間 : 1 年 5 ヶ月",
+       )
+Image.create(
+  name: "幸せの青い鳥_0",
+  index: 0,
+  path: "images/movie_010_bird_00.png",
+  thumb_path: "images/thumbs/movie_010_bird_00.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "幸せの青い鳥_1",
+  index: 1,
+  path: "images/movie_010_bird_01.png",
+  thumb_path: "images/thumbs/movie_010_bird_01.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "幸せの青い鳥_2",
+  index: 2,
+  path: "images/movie_010_bird_02.png",
+  thumb_path: "images/thumbs/movie_010_bird_02.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "幸せの青い鳥_3",
+  index: 3,
+  path: "images/movie_010_bird_03.png",
+  thumb_path: "images/thumbs/movie_010_bird_03.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "幸せの青い鳥_4",
+  index: 4,
+  path: "images/movie_010_bird_04.png",
+  thumb_path: "images/thumbs/movie_010_bird_04.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "YouTube",
+  link: "https://www.youtube.com/watch?v=ttTZ4m-OK9E",
+  index: 0,
+  work: work,
+)
+work = Work.create(
          name: "#nemusugi",
          slug: "websites/nemusugi",
-         caption: "Website\n2025/8/21\nReact\n制作時間: 12時間21分（デザイン含む）",
+         caption: "Website\n2025/8/21\nReact\n制作時間: 11時間22分（デザイン含む）",
        )
 Image.create(
   name: "#nemusugi_0",
