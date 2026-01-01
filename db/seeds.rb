@@ -2,6 +2,53 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "white * cocoa",
+         slug: "bms/whitecocoa",
+         caption: "BMS/映像作品\n2025/12/31\nAuthor: Yu^ta, yuinore, hato",
+       )
+Image.create(
+  name: "white * cocoa_0",
+  index: 0,
+  path: "images/movie_012_whitecocoa_00.png",
+  thumb_path: "images/thumbs/movie_012_whitecocoa_00.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "white * cocoa_1",
+  index: 1,
+  path: "images/movie_012_whitecocoa_01.png",
+  thumb_path: "images/thumbs/movie_012_whitecocoa_01.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "white * cocoa_2",
+  index: 2,
+  path: "images/movie_012_whitecocoa_02.png",
+  thumb_path: "images/thumbs/movie_012_whitecocoa_02.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "Download",
+  link: "https://yutabms.net/news/20251231",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "YouTube",
+  link: "https://www.youtube.com/watch?v=uCqh3OUeoaA",
+  index: 1,
+  work: work,
+)
+work = Work.create(
          name: "幸せの青い鳥",
          slug: "movies/bird",
          caption: "映像作品\n2025/10/12\n\n制作 : ねむい #合理的思考の皆伝\n\n企画 : ゆいのあ\n原画 : hato\n3DCG 協力 : Konone Mimura\n\nメインテーマ「The Blue Bird」\n編曲 : Yu^ta\n歌 : みずにんじん\n\n出展 : FRENZ 2025\n\n制作時間 : 411 時間 27 分\n制作期間 : 1 年 5 ヶ月",
