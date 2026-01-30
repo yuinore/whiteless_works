@@ -67,7 +67,7 @@ $ bundle exec rails server
 
 Place images to `public/images/`.
 
-```
+```bash
 $ ls seeds.csv
 $ ls public/images/*.png
 $ bundle exec rake seeder:seed

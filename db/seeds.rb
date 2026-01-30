@@ -2,6 +2,33 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "CLT Visualizer",
+         slug: "websites/clt",
+         caption: "Website\n2026/1/28\nReact\nDirected & Built by yuinore",
+       )
+Image.create(
+  name: "CLT Visualizer_0",
+  index: 0,
+  path: "images/website_clt_00.png",
+  thumb_path: "images/thumbs/website_clt_00.jpg",
+  thumb_width: 400,
+  thumb_height: 250,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "Visit Website",
+  link: "https://clt.yuinore.net/",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "GitHub",
+  link: "https://github.com/yuinore/clt-visualizer",
+  index: 1,
+  work: work,
+)
+work = Work.create(
          name: "white * cocoa",
          slug: "bms/whitecocoa",
          caption: "BMS/映像作品\n2025/12/31\nAuthor: Yu^ta, yuinore, hato",
@@ -49,9 +76,34 @@ ExternalLink.create(
   work: work,
 )
 work = Work.create(
+         name: "ピアノスコア The Blue Bird",
+         slug: "books/bird-score",
+         caption: "同人誌\n2025/12/31\nAuthor: Yu^ta, hato",
+       )
+Image.create(
+  name: "ピアノスコア The Blue Bird_0",
+  index: 0,
+  path: "images/books_023_bird_score_00.png",
+  thumb_path: "images/thumbs/books_023_bird_score_00.jpg",
+  thumb_width: 283,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "ピアノスコア The Blue Bird_1",
+  index: 1,
+  path: "images/books_023_bird_score_01.png",
+  thumb_path: "images/thumbs/books_023_bird_score_01.jpg",
+  thumb_width: 113,
+  thumb_height: 160,
+  link: nil,
+  work: work,
+)
+work = Work.create(
          name: "幸せの青い鳥",
          slug: "movies/bird",
-         caption: "映像作品\n2025/10/12\n\n制作 : ねむい #合理的思考の皆伝\n\n企画 : ゆいのあ\n原画 : hato\n3DCG 協力 : Konone Mimura\n\nメインテーマ「The Blue Bird」\n編曲 : Yu^ta\n歌 : みずにんじん\n\n出展 : FRENZ 2025\n\n制作時間 : 411 時間 27 分\n制作期間 : 1 年 5 ヶ月",
+         caption: "映像作品\n2025/10/12\n\n制作 : ねむい #合理的思考の皆伝\n\n企画 : ゆいのあ\n原画 : hato\n3DCG 協力 : Konone Mimura\n\nメインテーマ「The Blue Bird」\n編曲 : Yu^ta\n歌 : みずにんじん\n\n出展 : FRENZ 2025\n\n制作時間 : 421 時間 43 分\n制作期間 : 1 年 5 ヶ月",
        )
 Image.create(
   name: "幸せの青い鳥_0",
