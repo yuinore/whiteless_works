@@ -2,9 +2,42 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "アホフレーム (React 版)",
+         slug: "websites/aho-frame",
+         caption: "Website\n2026/2/3\nReact + Bootstrap\nDirected & Built by yuinore",
+       )
+Image.create(
+  name: "アホフレーム (React 版)_0",
+  index: 0,
+  path: "images/website_ahoframe_00.png",
+  thumb_path: "images/thumbs/website_ahoframe_00.jpg",
+  thumb_width: 400,
+  thumb_height: 261,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "Visit Website",
+  link: "https://aho-frame.yuinore.net/",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "GitHub",
+  link: "https://github.com/yuinore/aho-frame",
+  index: 1,
+  work: work,
+)
+ExternalLink.create(
+  name: "Blog Post",
+  link: "https://yuinore.net/2026/02/aho-frame-react/",
+  index: 2,
+  work: work,
+)
+work = Work.create(
          name: "CLT Visualizer",
          slug: "websites/clt",
-         caption: "Website\n2026/1/28\nReact\nDirected & Built by yuinore",
+         caption: "Website\n2026/1/28\nインパルス応答に対する中心極限定理の可視化ツール\nReact\nDirected & Built by yuinore",
        )
 Image.create(
   name: "CLT Visualizer_0",
@@ -26,6 +59,12 @@ ExternalLink.create(
   name: "GitHub",
   link: "https://github.com/yuinore/clt-visualizer",
   index: 1,
+  work: work,
+)
+ExternalLink.create(
+  name: "Blog Post",
+  link: "https://yuinore.net/2026/01/clt-visualizer/",
+  index: 2,
   work: work,
 )
 work = Work.create(
@@ -432,7 +471,7 @@ ExternalLink.create(
 work = Work.create(
          name: "ゆるいきらファン合同",
          slug: "books/krfgd",
-         caption: "同人誌\n2022/12/31\r\nOrganizer: hato",
+         caption: "同人誌\n2022/12/31\nOrganizer: hato",
        )
 Image.create(
   name: "ゆるいきらファン合同_0",
@@ -788,7 +827,7 @@ ExternalLink.create(
 work = Work.create(
          name: "うさぎえっちイラスト本",
          slug: "books/usapic",
-         caption: "同人誌\n2021/8/28\r\nAuthor: hato",
+         caption: "同人誌\n2021/8/28\nAuthor: hato",
        )
 Image.create(
   name: "うさぎえっちイラスト本_0",
@@ -944,7 +983,7 @@ ExternalLink.create(
 work = Work.create(
          name: "マヤちゃんとランドセル",
          slug: "illust/maya",
-         caption: "イラスト\n2020/8/8\r\nAuthor: hato\n制作時間: 43時間7分",
+         caption: "イラスト\n2020/8/8\nAuthor: hato\n制作時間: 43時間7分",
        )
 Image.create(
   name: "マヤちゃんとランドセル_0",
@@ -986,7 +1025,7 @@ ExternalLink.create(
 work = Work.create(
          name: "ねこみみえっちイラスト本 4",
          slug: "books/neko4",
-         caption: "同人誌\n2020/5/5\nAuthor: hato\nGuest: シロ9じら, いなじ, るりあ, 風倉ふう, わたるん, 矢野原ききょう\n制作時間: 40時間19分\r\n製作期間: 50日（うち稼働9日）",
+         caption: "同人誌\n2020/5/5\nAuthor: hato\nGuest: シロ9じら, いなじ, るりあ, 風倉ふう, わたるん, 矢野原ききょう\n制作時間: 40時間19分\n製作期間: 50日（うち稼働9日）",
        )
 Image.create(
   name: "ねこみみえっちイラスト本 4_0",
