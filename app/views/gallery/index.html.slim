@@ -14,6 +14,7 @@ div.container-container
       .flex-images
         - @works.each do |work|
           - work.images.each_with_index do |image, i|
+            - next if i != 0
             div[class="item" data-w="#{image.thumb_width}" data-h="#{image.thumb_height}"]
               - image_html = capture do
                 = image_tag "/#{image.thumb_path}", \
