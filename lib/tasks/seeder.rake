@@ -21,7 +21,11 @@ namespace :seeder do
 
     # convert CSV to object
     # NOTE: names must be symbolized, as same as `JSON.parse json, symbolize_names: true`
-    obj = CSV.parse(csv_content, headers: true).map { |row| row.to_h.symbolize_keys }
+    obj = CSV.parse(csv_content, headers: true).map { |row|
+      row.to_h.symbolize_keys.transform_values { |v|
+        v.is_a?(String) ? v.gsub("\r", "") : v
+      }
+    }
 
     str = []
 
