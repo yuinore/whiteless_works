@@ -90,6 +90,15 @@ namespace :seeder do
     `rm -f public/images/thumbs/*.jpg`
   end
 
+  def load_image(public_path)
+    source = if File.extname(public_path).casecmp(".gif").zero?
+               "#{public_path}[0]"
+             else
+               public_path
+             end
+    Magick::Image.read(source).first
+  end
+
   def generate_thumbnail(filename, base_image_size)
     puts "resize image: #{filename}"
     ret = nil
@@ -102,7 +111,7 @@ namespace :seeder do
     # サムネイル生成
     [[base_image_size, ""], [base_image_size * 2, "@2x"]].each do |image_size, retina_postfix|
       # refresh image
-      image = Magick::ImageList.new("public/" + filename)
+      image = load_image("public/" + filename)
       thumb_path = "images/thumbs/#{File.basename(filename, ".*")}#{retina_postfix}.jpg"
 
       # 400x400 のボックス内に収める
@@ -127,7 +136,7 @@ namespace :seeder do
   end
 
   def generate_twitter_card(filename)
-    image = Magick::ImageList.new("public/" + filename)
+    image = load_image("public/" + filename)
     card_path = "images/cards/#{File.basename(filename, ".*")}.jpg"
 
     # 600x314 のボックス内に収める
