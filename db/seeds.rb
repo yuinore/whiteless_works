@@ -2,6 +2,338 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "幸せの青い鳥 BMS Package",
+         slug: "bmspacks/gift",
+         caption: "BMSパッケージ/Website\n2026/5/5",
+       )
+Image.create(
+  name: "幸せの青い鳥 BMS Package_0",
+  index: 0,
+  path: "images/bmspack_003_gift_00.png",
+  thumb_path: "images/thumbs/bmspack_003_gift_00.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "幸せの青い鳥 BMS Package_1",
+  index: 1,
+  path: "images/bmspack_003_gift_01.png",
+  thumb_path: "images/thumbs/bmspack_003_gift_01.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "幸せの青い鳥 BMS Package_2",
+  index: 2,
+  path: "images/bmspack_003_gift_02.png",
+  thumb_path: "images/thumbs/bmspack_003_gift_02.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "Download",
+  link: "https://gift.yutabms.net/",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "GitHub",
+  link: "https://github.com/yuinore/giftpakweb",
+  index: 1,
+  work: work,
+)
+work = Work.create(
+         name: "In and Out",
+         slug: "movies/cation",
+         caption: "映像作品\n2026/5/5\n\n制作時間 : 16 時間 43 分 (映像・イラストのみ)",
+       )
+Image.create(
+  name: "In and Out_0",
+  index: 0,
+  path: "images/movie_014_cation_00.jpg",
+  thumb_path: "images/thumbs/movie_014_cation_00.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "In and Out_1",
+  index: 1,
+  path: "images/movie_014_cation_01.jpg",
+  thumb_path: "images/thumbs/movie_014_cation_01.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "In and Out_2",
+  index: 2,
+  path: "images/movie_014_cation_02.jpg",
+  thumb_path: "images/thumbs/movie_014_cation_02.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "In and Out_3",
+  index: 3,
+  path: "images/movie_014_cation_03.jpg",
+  thumb_path: "images/thumbs/movie_014_cation_03.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "In and Out_4",
+  index: 4,
+  path: "images/movie_014_cation_04.jpg",
+  thumb_path: "images/thumbs/movie_014_cation_04.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "ニコニコ動画",
+  link: "https://www.nicovideo.jp/watch/sm46272249",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "YouTube",
+  link: "https://www.youtube.com/watch?v=-X6l4X_ctcE",
+  index: 1,
+  work: work,
+)
+work = Work.create(
+         name: "The Blue Bird",
+         slug: "cds/hobak",
+         caption: "音楽CD\n2026/4/26 (M3-2026春)\nAuthor: Yu^ta, mizninjin, hato, yuinore",
+       )
+Image.create(
+  name: "The Blue Bird_0",
+  index: 0,
+  path: "images/cds_007_hobak.png",
+  thumb_path: "images/thumbs/cds_007_hobak.jpg",
+  thumb_width: 400,
+  thumb_height: 400,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "Tracklist",
+  link: "https://yutabms.net/cds",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "Crossfade",
+  link: "https://soundcloud.com/strawberry-mint-chocolate/crossfade-m3-2026-t-08b",
+  index: 1,
+  work: work,
+)
+work = Work.create(
+         name: "Proline",
+         slug: "movies/proline",
+         caption: "映像作品\n2026/4/19\n\n制作時間 : 14 時間 53 分 (映像のみ)",
+       )
+Image.create(
+  name: "Proline_0",
+  index: 0,
+  path: "images/movie_013_proline_00.jpg",
+  thumb_path: "images/thumbs/movie_013_proline_00.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "Proline_1",
+  index: 1,
+  path: "images/movie_013_proline_01.jpg",
+  thumb_path: "images/thumbs/movie_013_proline_01.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "Proline_2",
+  index: 2,
+  path: "images/movie_013_proline_02.jpg",
+  thumb_path: "images/thumbs/movie_013_proline_02.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "Proline_3",
+  index: 3,
+  path: "images/movie_013_proline_03.jpg",
+  thumb_path: "images/thumbs/movie_013_proline_03.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "Proline_4",
+  index: 4,
+  path: "images/movie_013_proline_04.jpg",
+  thumb_path: "images/thumbs/movie_013_proline_04.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "YouTube",
+  link: "https://www.youtube.com/watch?v=2lgkajp2wPo",
+  index: 0,
+  work: work,
+)
+work = Work.create(
+         name: "Digital Filter Plotter",
+         slug: "websites/dfilterplot",
+         caption: "Website\n2026/2/18\nデジタルフィルタ可視化ツール\nReact + Material UI\nDirected & Built by yuinore",
+       )
+Image.create(
+  name: "Digital Filter Plotter_0",
+  index: 0,
+  path: "images/website_dfilterplot_00.jpg",
+  thumb_path: "images/thumbs/website_dfilterplot_00.jpg",
+  thumb_width: 400,
+  thumb_height: 206,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "Digital Filter Plotter_1",
+  index: 1,
+  path: "images/website_dfilterplot_01.gif",
+  thumb_path: "images/thumbs/website_dfilterplot_01.jpg",
+  thumb_width: 160,
+  thumb_height: 84,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "Digital Filter Plotter_2",
+  index: 2,
+  path: "images/website_dfilterplot_02.gif",
+  thumb_path: "images/thumbs/website_dfilterplot_02.jpg",
+  thumb_width: 160,
+  thumb_height: 95,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "Digital Filter Plotter_3",
+  index: 3,
+  path: "images/website_dfilterplot_03.gif",
+  thumb_path: "images/thumbs/website_dfilterplot_03.jpg",
+  thumb_width: 160,
+  thumb_height: 93,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "Visit Website",
+  link: "https://dfilter.yuinore.net/",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "GitHub",
+  link: "https://github.com/yuinore/dfilterplot",
+  index: 1,
+  work: work,
+)
+ExternalLink.create(
+  name: "About",
+  link: "https://yuinore.net/2026/02/digital-filter-plotter/",
+  index: 2,
+  work: work,
+)
+work = Work.create(
+         name: "あまいこと",
+         slug: "movies/sweets",
+         caption: "映像作品\n2026/2/14\nAuthor: yuinore, hato, Konone Mimura, Yu^ta\n\n原作 : ゆーね様\n出展 : FRENZ 2019",
+       )
+Image.create(
+  name: "あまいこと_0",
+  index: 0,
+  path: "images/movie_007_argent_00.png",
+  thumb_path: "images/thumbs/movie_007_argent_00.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "あまいこと_1",
+  index: 1,
+  path: "images/movie_007_argent_01.png",
+  thumb_path: "images/thumbs/movie_007_argent_01.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "あまいこと_2",
+  index: 2,
+  path: "images/movie_007_argent_02.png",
+  thumb_path: "images/thumbs/movie_007_argent_02.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "あまいこと_3",
+  index: 3,
+  path: "images/movie_007_argent_03.png",
+  thumb_path: "images/thumbs/movie_007_argent_03.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+Image.create(
+  name: "あまいこと_4",
+  index: 4,
+  path: "images/movie_007_argent_04.png",
+  thumb_path: "images/thumbs/movie_007_argent_04.jpg",
+  thumb_width: 160,
+  thumb_height: 90,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "ニコニコ動画",
+  link: "https://www.nicovideo.jp/watch/sm45943507",
+  index: 0,
+  work: work,
+)
+ExternalLink.create(
+  name: "YouTube",
+  link: "https://www.youtube.com/watch?v=oRNtevkL3XI",
+  index: 1,
+  work: work,
+)
+work = Work.create(
          name: "アホフレーム (React 版)",
          slug: "websites/aho-frame",
          caption: "Website\n2026/2/3\nReact + Bootstrap\nDirected & Built by yuinore",
@@ -29,7 +361,7 @@ ExternalLink.create(
   work: work,
 )
 ExternalLink.create(
-  name: "Blog Post",
+  name: "About",
   link: "https://yuinore.net/2026/02/aho-frame-react/",
   index: 2,
   work: work,
@@ -37,7 +369,7 @@ ExternalLink.create(
 work = Work.create(
          name: "CLT Visualizer",
          slug: "websites/clt",
-         caption: "Website\n2026/1/28\nインパルス応答に対する中心極限定理の可視化ツール\nReact\nDirected & Built by yuinore",
+         caption: "Website\n2026/1/28\nインパルス応答に対する中心極限定理の可視化ツール\nReact + Material UI\nDirected & Built by yuinore",
        )
 Image.create(
   name: "CLT Visualizer_0",
@@ -62,7 +394,7 @@ ExternalLink.create(
   work: work,
 )
 ExternalLink.create(
-  name: "Blog Post",
+  name: "About",
   link: "https://yuinore.net/2026/01/clt-visualizer/",
   index: 2,
   work: work,
@@ -1143,21 +1475,6 @@ ExternalLink.create(
   name: "メロンブックス",
   link: "https://www.melonbooks.co.jp/detail/detail.php?product_id=579768",
   index: 1,
-  work: work,
-)
-work = Work.create(
-         name: "あまいこと",
-         slug: "movies/sweets",
-         caption: "映像作品\nComing soon...\nAuthor: yuinore, hato, K. Mimura, Yu^ta, mizninjin",
-       )
-Image.create(
-  name: "あまいこと_0",
-  index: 0,
-  path: "images/movie_007_sweets.png",
-  thumb_path: "images/thumbs/movie_007_sweets.jpg",
-  thumb_width: 400,
-  thumb_height: 225,
-  link: nil,
   work: work,
 )
 work = Work.create(
