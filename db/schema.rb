@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2021_12_14_082400) do
+ActiveRecord::Schema[8.0].define(version: 2026_05_30_200750) do
   create_table "external_links", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.string "link"
@@ -50,7 +50,9 @@ ActiveRecord::Schema[7.0].define(version: 2021_12_14_082400) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "slug"
+    t.integer "year"
     t.index ["slug"], name: "index_works_on_slug", unique: true
+    t.index ["year"], name: "index_works_on_year"
   end
 
   add_foreign_key "external_links", "works"

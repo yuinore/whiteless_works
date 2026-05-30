@@ -38,10 +38,14 @@ namespace :seeder do
         sort_by { |work| [work[:published_at], stable_sort_i += 1] }.
         reverse.
         each { |work|
+      published_at = work[:published_at]
+      published_year = published_at.split("/")[0].to_i
+
       str << "work = Work.create("
       str << "         name: #{work[:name].inspect},"
       str << "         slug: #{work[:slug].inspect},"
       str << "         caption: #{(work[:category] + "\n" + work[:caption]).inspect},"
+      str << "         year: #{published_year.inspect},"
       str << "       )"
 
       (work[:images] || "").each_line.map(&:chomp).each_with_index { |image_filename, i|
