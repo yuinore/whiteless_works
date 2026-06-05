@@ -2,6 +2,28 @@ Work.destroy_all
 Image.destroy_all
 ExternalLink.destroy_all
 work = Work.create(
+         name: "[Full Album] Strawberry Mint Chocolate",
+         slug: "playlist/smc",
+         caption: "プレイリスト\n2023/6/7 - 2026/6/2\nAfter Effects + Blender + Animation Nodes",
+         year: 2026,
+       )
+Image.create(
+  name: "[Full Album] Strawberry Mint Chocolate_0",
+  index: 0,
+  path: "images/playlist_001_smc.jpg",
+  thumb_path: "images/thumbs/playlist_001_smc.jpg",
+  thumb_width: 400,
+  thumb_height: 225,
+  link: nil,
+  work: work,
+)
+ExternalLink.create(
+  name: "Play",
+  link: "https://www.youtube.com/playlist?list=PLbxQo6dzOkDZps1McTQGrhgs-MT7FL7tX",
+  index: 0,
+  work: work,
+)
+work = Work.create(
          name: "幸せの青い鳥 BMS Package",
          slug: "bmspacks/gift",
          caption: "BMSパッケージ/Website\n2026/5/5",
@@ -2009,7 +2031,7 @@ ExternalLink.create(
 )
 ExternalLink.create(
   name: "YouTube",
-  link: "https://youtu.be/QtbDKZWrUgY",
+  link: "https://www.youtube.com/watch?v=QtbDKZWrUgY",
   index: 1,
   work: work,
 )
