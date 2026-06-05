@@ -52,7 +52,7 @@ class WorksController < ApplicationController
 
     def youtube_embed_link(work)
       youtube_link = work.external_links.detect do |external_link|
-        external_link.link.start_with?("https://www.youtube.com/")
+        external_link.link.start_with?("https://www.youtube.com/") && !external_link.link.include?("/playlist?list=")
       end
 
       youtube_link&.link&.gsub("/watch?v=", "/embed/")
